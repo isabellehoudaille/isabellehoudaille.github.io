@@ -612,6 +612,7 @@ body.cp-open .tab-contact { opacity: 0; pointer-events: none; }
 .cp-photo span { color: var(--txt-a); font-size: .9rem; font-weight: 600; }
 .cpanel p { margin: 0; color: var(--soft); font-size: 1.02rem; }
 .cpanel .cta { width: 100%; }
+.cpanel .cta + .cta { margin-top: 10px; }
 .addr { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 10px 10px 16px; border-radius: 16px; border: 1px dashed var(--line2); background: var(--card); }
 .addr span { min-width: 0; overflow-wrap: anywhere; font-size: .95rem; user-select: all; -webkit-user-select: all; font-weight: 500; }
 .copy { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 99px; border: 1px solid var(--line2); background: var(--card2); font-size: .85rem; font-weight: 600; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20261027095411">
+<link rel="stylesheet" href="style.css?v=20261028120000">
 </head>
 <body>
 <div id="progress" aria-hidden="true"></div>
@@ -54,7 +54,8 @@
       '<div class="cp-photo"><span class="logo-b">IH</span><div><b>' + esc(D.meta.nom) + '</b><span>' + esc(D.meta.titre) + (D.meta.titre2 ? ' ' + esc(D.meta.titre2) : '') + '</span></div></div>' +
       '<h2 class="cp-h">' + esc(D.contact.titre) + '</h2>' +
       (D.contact.texte ? '<p class="cp-txt">' + esc(D.contact.texte) + '</p>' : '') +
-      '<a class="cta" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.ecrire || "Ouvrir ma messagerie") + '</a>' +
+      (D.contact.rdvLien ? '<a class="cta" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
+      '<a class="cta' + (D.contact.rdvLien ? ' alt' : '') + '" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.ecrire || "Ouvrir ma messagerie") + '</a>' +
       '<div class="addr"><span id="addr">' + esc(D.meta.email) + '</span><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
       '<ul class="cp-list"><li><a class="in" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + '<span>Profil LinkedIn</span></a></li>' +
       '<li><a href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + '<span>CV en PDF</span></a></li>' +
@@ -70,6 +71,7 @@
       '<h1 class="nom">' + esc(D.meta.titre).replace(/IA$/, '<span class="gt">IA</span>') + (D.meta.titre2 ? '<small>' + esc(D.meta.titre2).replace(/IA$/, '<span class="gt">IA</span>') + '</small>' : '') + '</h1>' +
       '<p class="profil-texte">' + txt + '</p>' +
       '<div class="hero-act"><button class="cta" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button>' +
+      (D.contact.rdvLien ? '<a class="cta alt" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
       '<a class="cta alt" href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + 'Télécharger le CV (PDF)</a></div>' +
       '<p class="metas">' + ico("lieu") + esc(D.meta.lieu) + '</p>' +
       '</div>' +

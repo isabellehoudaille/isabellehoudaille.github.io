@@ -566,7 +566,9 @@
   "objet": "Prise de contact à la suite de votre CV",
   "bouton": "Me contacter",
   "accroche": "On se parle ?",
-  "ecrire": "Écrivez-moi"
+  "ecrire": "Écrivez-moi",
+  "rdv": "Prendre rendez-vous",
+  "rdvLien": "/rdv/"
  },
  "titres": {
   "domaines": "Domaines d'intervention",
