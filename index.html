@@ -2,11 +2,449 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>cadreIActif · Isabelle Houdaille</title>
-<meta http-equiv="refresh" content="0; url=/cv/">
-<link rel="canonical" href="https://www.cadreiactif.com/cv/">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CV Isabelle Houdaille</title>
+<meta name="description" content="CV interactif d'Isabelle Houdaille, formatrice en IA générative et agentique.">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Isabelle Houdaille, formatrice en IA">
+<meta property="og:description" content="CV interactif : IA générative et agentique pour la communication, les RH, les entrepreneurs, l'expérience utilisateur et la conduite du changement.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23ffffff%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-size=%2728%27 font-weight=%27700%27 text-anchor=%27middle%27 font-family=%27Arial,sans-serif%27 fill=%27%23e4502a%27%3EIH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="style.css?v=20261027095411">
 </head>
 <body>
-<p><a href="/cv/">Accéder au site d'Isabelle Houdaille</a></p>
+<div id="progress" aria-hidden="true"></div>
+<header class="top" id="top"></header>
+<main id="main"><div class="erreur">Chargement du CV…</div></main>
+<div id="dock"></div>
+
+<script>
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var D0;
+  var NAV = [["expertise", "Expertise"], ["posture", "Posture"], ["realisations", "Références"]];
+
+  function fmtMin(m) {
+    m = Math.round(m);
+    if (m >= 60) { var h = Math.floor(m / 60), r = m % 60; return h + " h" + (r ? " " + (r < 10 ? "0" : "") + r : ""); }
+    return m + " min";
+  }
+  function ico(name) { return '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + D0.icones.raw[name] + '</svg>'; }
+  function counter(c) { return '<div class="n" data-n="' + c.n + '" data-s="' + esc(c.s) + '">' + c.n + (c.s ? '<i>' + esc(c.s) + '</i>' : '') + '</div>'; }
+  function mailto() { return "mailto:" + D0.meta.email + "?subject=" + encodeURIComponent(D0.contact.objet); }
+
+  /* ---------- Barre du haut, dock de contact ---------- */
+  function renderTop(D) {
+    $("#top").innerHTML =
+      '<div class="top-in"><a class="logo" href="#haut" aria-label="Haut de page"><span>IH</span>Isabelle Houdaille</a>' +
+      '<nav class="tnav" aria-label="Sections">' + NAV.map(function (n) { return '<a href="#' + n[0] + '" data-s="' + n[0] + '">' + n[1] + '</a>'; }).join("") + '</nav>' +
+      '<div class="top-act">' +
+      '<button class="cta sm" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button></div></div>';
+
+    $("#dock").innerHTML =
+      '<button class="tab-contact" type="button" data-open-contact aria-label="' + esc(D.contact.accroche || D.contact.bouton) + '"><span class="tc-ic">' + ico("send") + '</span><span class="tc-tx">' + esc(D.contact.accroche || D.contact.bouton) + '</span></button>' +
+      '<div class="scrim" id="scrim"></div>' +
+      '<aside class="cpanel" id="cpanel" aria-hidden="true" aria-label="Contact"><button class="icon-btn x" type="button" id="cclose" aria-label="Fermer">' + ico("close") + '</button>' +
+      '<div class="cp-photo"><span class="logo-b">IH</span><div><b>' + esc(D.meta.nom) + '</b><span>' + esc(D.meta.titre) + (D.meta.titre2 ? ' ' + esc(D.meta.titre2) : '') + '</span></div></div>' +
+      '<h2 class="cp-h">' + esc(D.contact.titre) + '</h2>' +
+      (D.contact.texte ? '<p class="cp-txt">' + esc(D.contact.texte) + '</p>' : '') +
+      '<a class="cta" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.ecrire || "Ouvrir ma messagerie") + '</a>' +
+      '<div class="addr"><span id="addr">' + esc(D.meta.email) + '</span><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
+      '<ul class="cp-list"><li><a class="in" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + '<span>Profil LinkedIn</span></a></li>' +
+      '<li><a href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + '<span>CV en PDF</span></a></li>' +
+      '<li class="plain">' + ico("lieu") + '<span>' + esc(D.meta.lieu) + '</span></li></ul></aside>';
+  }
+
+  /* ---------- Hero ---------- */
+  function heroHtml(D) {
+    var T = D.titres;
+    var txt = esc(D.profil.texte).replace(esc(D.profil.accent), '<em class="gt">' + esc(D.profil.accent) + '</em>');
+    return '<section class="hero" id="haut"><div class="hero-grid"><div class="hero-txt">' +
+      '<span class="role"><i></i>' + esc(D.meta.nom) + '</span>' +
+      '<h1 class="nom">' + esc(D.meta.titre).replace(/IA$/, '<span class="gt">IA</span>') + (D.meta.titre2 ? '<small>' + esc(D.meta.titre2).replace(/IA$/, '<span class="gt">IA</span>') + '</small>' : '') + '</h1>' +
+      '<p class="profil-texte">' + txt + '</p>' +
+      '<div class="hero-act"><button class="cta" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button>' +
+      '<a class="cta alt" href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + 'Télécharger le CV (PDF)</a></div>' +
+      '<p class="metas">' + ico("lieu") + esc(D.meta.lieu) + '</p>' +
+      '</div>' +
+      '<figure class="vid" id="presentation">' +
+        '<div class="vid-frame">' +
+        '<video id="vid-el" playsinline preload="none" poster="media/presentation-poster.jpg" aria-label="Vidéo de présentation d\'' + esc(D.meta.nom) + '" width="720" height="1280"><source src="media/presentation.mp4" type="video/mp4"></video>' +
+        '<img class="vid-poster" src="media/presentation-poster.jpg" alt="" width="720" height="1280">' +
+        '<button class="vid-play" type="button" aria-label="Lire la vidéo de présentation (40 secondes)">' +
+          '<span class="vid-ring"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5z" fill="currentColor"/></svg></span>' +
+          '<span class="vid-lab">Me découvrir en 40 secondes</span>' +
+        '</button>' +
+        '</div></figure></div></section>';
+  }
+
+  function offreHtml(D) {
+    var O = D.offre; if (!O) return "";
+    return '<section class="offre" id="offre"><div class="sec-head"><h2>' + esc(O.titre) + '</h2><span class="sec-hint">' + esc(O.hint || "") + '</span></div>' +
+      '<ul class="offre-grid">' + O.items.map(function (it, i) {
+        return '<li class="offre-it"><span class="offre-n">' + (i + 1) + '</span><h3>' + esc(it.t) + '</h3><p>' + esc(it.d) + '</p>' + (it.niv ? '<ul class="offre-niv">' + it.niv.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join("") + '</ul>' : '') + (it.fin ? '<p class="offre-fin">' + esc(it.fin) + '</p>' : '') + '</li>';
+      }).join("") + '</ul>' + (O.pied ? '<p class="offre-devis">' + esc(O.pied) + ' <button type="button" class="devis-lien" data-open-contact>' + esc(O.piedLien || "Contactez-moi") + '</button></p>' : '') + '</section>';
+  }
+
+  function kpisHtml(D) {
+    var C = D.chiffres, H = C[0], S = C[1], A = C[2], Y = C[3];
+    function k(c, sub) { return '<article class="kpi"><div class="kbody">' + counter(c) + '<div class="l">' + esc(c.l) + '</div></div><div class="ks">' + sub + '</div></article>'; }
+    var o = '<section class="chiffres"><div class="sec-head"><h2>' + esc(D.titres.chiffres) + '</h2></div><div class="kpis" id="dash">';
+    o += k(H, H.repartition[0].h + ' h en ' + esc(H.repartition[0].l) + '<br>' + H.repartition[1].h + ' h auprès d\'adultes');
+    o += k(S, esc(S.d) + '<br>depuis 2019, en présentiel et en distanciel');
+    o += k(A, 'IA générative et agentique<br>' + A.sessions.nb + ' sessions de ' + A.sessions.duree.replace(" ", "\u00a0") + ', ' + A.sessions.par + ' participants');
+    o += k(Y, 'Communication, marketing,<br>transformation digitale, innovation');
+    return o + '</div>' +
+      '<p class="publics"><span>' + esc(D.titres.publics) + '</span>' + D.publics.map(function (t) { return '<b>' + esc(t) + '</b>'; }).join("") + '</p></section>';
+  }
+
+  /* ---------- Accordéons ---------- */
+  function acc(id, num, title, teaser, body, open) {
+    return '<section class="acc' + (open ? " open" : "") + '" id="' + id + '"><button class="acc-h' + (num ? '' : ' nonum') + '" type="button" aria-expanded="' + !!open + '" aria-controls="' + id + '-b" id="' + id + '-h">' +
+      (num ? '<span class="an">' + num + '</span>' : '') + '<span class="at"><b>' + title + '</b><small>' + teaser + '</small></span>' +
+      '<span class="ah"><span class="ah-o">Cliquez pour ouvrir</span><span class="ah-c">Fermer</span></span><span class="ap">' + ico("plus") + '</span></button>' +
+      '<div class="acc-b" id="' + id + '-b" role="region" aria-labelledby="' + id + '-h"><div class="acc-w"><div class="acc-in">' + body + '</div></div></div></section>';
+  }
+
+  function flowHtml(D) {
+    var P = D.posture;
+    function it(x) { return '<li class="pi pi' + x.n + '"><span class="pn">' + x.n + '</span><div><h3>' + esc(x.t) + '</h3><b>' + esc(x.s) + '</b><p>' + esc(x.d) + '</p></div></li>'; }
+    return '<div class="pos" id="flow"><p class="pos-intro">' + esc(P.intro) + '</p><div class="pos-grid"><ol class="pitems">' + P.items.map(it).join("") + '</ol>' +
+      '<figure class="pfig"><img src="' + esc(P.img) + '" alt="' + esc(P.alt) + '" loading="lazy"></figure></div>' +
+      '<p class="pos-close">' + esc(P.cloture) + '</p>' +
+      '<div class="flow-foot"><span>' + esc(P.pied) + '</span><a href="#realisations" data-go="realisations">' + esc(P.lien) + ico("down") + '</a></div></div>';
+  }
+
+  function arr(s) { return esc(s).replace(/→/g, '<span class="ar">→</span>'); }
+  function titreIA(t) { return esc(t).replace(/^IA\b/, '<span class="iab">IA</span>'); }
+  function expertiseHtml(D) {
+    return '<section class="expertise" id="expertise"><div class="sec-head"><h2>' + esc(D.titres.expertise).replace(/IA$/, '<span class="gt">IA</span>') + '</h2><span class="sec-hint">' + ico("cursor") + 'Cliquez sur un domaine pour en voir des cas concrets</span></div>' +
+      '<div class="tiles" id="tiles" role="tablist" aria-label="Domaines d\'expertise en IA">' +
+      D.fonctions.map(function (f, k) {
+        return '<button class="tile spot c-' + f.col + '" role="tab" type="button" id="tab-' + f.id + '" data-i="' + k + '" aria-selected="false" aria-controls="panel">' +
+          '<span class="t-ic">' + f.icon + '</span>' +
+          '<span class="t-top"><span class="plus"><span class="p1">' + ico("plus") + '</span><span class="p2">' + ico("check") + '</span></span></span>' +
+          '<span class="t-title">' + titreIA(f.t) + '</span>' +
+          '<span class="t-go"><span class="go-off">Découvrir</span><span class="go-on">Affiché ci-dessous</span><span class="go-plus">' + ico("plus") + '</span></span></button>';
+      }).join("") + '</div><div class="panel" id="panel" role="tabpanel" aria-live="polite" hidden></div></section>';
+  }
+
+  function terrainHtml(D) {
+    return '<section class="terrain" id="terrain"><div class="sec-head"><h2>' + esc(D.titres.terrain) + '</h2><span class="sec-hint">' + esc(D.titres.terrainHint || "") + '</span></div><div class="ribbon">' +
+      D.terrain.map(function (p) { return '<figure class="spot"><img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy"><figcaption>' + esc(p.cap) + '</figcaption></figure>'; }).join("") + '</div></section>';
+  }
+
+  function realisationsHtml(D) {
+    return '<p class="lead">Trois histoires où l\'IA a rendu du temps, du livre de prompts à l\'agent.</p>' +
+            '<div class="rcards" id="rcards" role="tablist" aria-label="Réalisations">' + D.realisations.map(function (r, k) {
+        return '<button type="button" class="rcard spot" role="tab" id="rtab-' + r.id + '" data-i="' + k + '" aria-selected="false" aria-controls="rpanel">' +
+          '<span class="rimg"><img src="' + esc(r.img) + '" alt="" loading="lazy"></span>' +
+          '<span class="rbody"><span class="t-num">0' + (k + 1) + ' · ' + esc(r.sous) + '</span><span class="t-title">' + esc(r.t) + '</span>' + (r.gain ? '<span class="r-gain">' + esc(r.gain) + '</span>' : '') +
+          '<span class="t-go"><span class="go-off">Voir le détail</span><span class="go-on">Affiché ci-dessous</span>' + ico("arrow") + '</span></span></button>';
+      }).join("") + '</div><div class="rpanel" id="rpanel" role="tabpanel" aria-live="polite" hidden></div>';
+  }
+
+  function rdetail(r) {
+    var o = '<figure class="rfig"><img src="' + esc(r.img) + '" alt="' + esc(r.alt) + '"></figure><div class="rtxt"><h3>' + esc(r.t) + '</h3><div class="org">' + esc(r.sous) + '</div><p>' + esc(r.d) + '</p>';
+    if (r.pts && r.pts.length) o += '<ul class="rpts">' + r.pts.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join("") + '</ul>';
+    if (r.slider) {
+      o += '<div class="roi"><div class="roi-top"><span class="rl">Validation du PV mensuel (estimation)</span><div class="big" aria-live="polite"><span id="roi-val">' + fmtMin(15) + '</span><small id="roi-gain"></small></div></div>' +
+        '<div class="bar"><i id="roi-bar"></i></div>' +
+        '<div class="slider"><div class="slider-labels"><span>Sans agent : ' + fmtMin(120) + '</span><span>Avec l\'agent : ' + fmtMin(15) + '</span></div>' +
+        '<div class="range-wrap"><input id="roi-range" type="range" min="0" max="100" value="100" aria-label="Sans agent vers avec agent"><span class="slide-hint" id="slide-hint">' + ico("arrow") + 'Glissez</span></div></div></div>';
+    } else if (r.avant) {
+      o += '<div class="rkpi"><b>' + arr(r.chiffre) + '</b><span>' + esc(r.chiffreL) + '</span><div class="ba"><i class="b1"></i><i class="b2" style="--w:' + (r.apres / r.avant * 100).toFixed(1) + '%"></i></div></div>';
+    } else if (r.chiffre) {
+      o += '<div class="rkpi"><b>' + esc(r.chiffre) + ' ' + esc(r.chiffreL) + '</b></div>';
+    }
+    return o + '</div>';
+  }
+
+  function dated(list) { return list.map(function (x) { return '<li><b>' + esc(x.a) + '</b><span class="dt">' + esc(x.t) + '</span><span class="de">' + esc(x.e) + '</span></li>'; }).join(""); }
+
+  function parcoursHtml(D) {
+    return '<div class="timeline">' + D.experiences.map(function (e) {
+      return '<article class="job spot"><div class="job-head"><div><h3>' + esc(e.t) + '</h3><div class="org">' + esc(e.o) + '</div></div><div class="per">' + esc(e.p) + '</div></div>' +
+        (e.clients ? '<div class="clients">Clients : ' + esc(e.clients) + '</div>' : '') +
+        '<ul>' + e.b.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join("") + '</ul>' +
+        (e.photos ? '<div class="gal n' + e.photos.length + '">' + e.photos.map(function (p) { return '<figure><img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy"><figcaption>' + esc(p.cap) + '</figcaption></figure>'; }).join("") + '</div>' : '') + '</article>';
+    }).join("") +
+      '<article class="job prev"><div class="job-head"><div><h3>Parcours antérieur</h3><div class="org">Marketing et communication, 1997 - 2010</div></div></div><ul class="dated">' + dated(D.parcours) + '</ul></article></div>';
+  }
+
+  function outilsHtml(D) {
+    return '<div class="duo"><div class="card"><h3>Outils et méthodes</h3><div class="tgroups">' +
+      D.outils.map(function (g) { return '<div class="tg"><span class="tg-l">' + esc(g.g) + '</span><ul class="toolist">' + g.i.map(function (o) { return '<li>' + esc(o) + '</li>'; }).join("") + '</ul></div>'; }).join("") + '</div></div>' +
+      '<div class="card"><h3>Formation et certifications</h3><ul class="dated">' + dated(D.formation) + '</ul></div></div>';
+  }
+
+  function renderMain(D) {
+    var h = heroHtml(D) + expertiseHtml(D) + kpisHtml(D) + terrainHtml(D);
+    h += '<div class="accs">' +
+      acc("posture", "", "Ma posture", "Le métier, la posture, puis les outils", flowHtml(D), false) +
+      acc("realisations", "", "Références et réalisations", "Ce que j'ai déjà construit avec mes clients, du livre de prompts à l'agent métier", realisationsHtml(D), false) + '</div>';
+    h += offreHtml(D);
+    h += '<p class="pied-nda">cadreIActif, SASU au capital de 1&nbsp;000&nbsp;€ · SIREN 100634658 · NDA ' + esc(D.meta.nda || "11923048992") + '</p>' +
+      '<p class="pied-copy">&copy; 2026 Isabelle Houdaille. Tous droits réservés.</p>' +
+      '<p class="pied-ia"><span>Site co-construit avec l\'IA et ma créativité</span><svg class="pal" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><path class="pal-b" d="M32 4C16 4 4 15 4 29c0 14 11 23 25 23 6 0 8-4 6-8s1-8 6-8h7c8 0 12-5 12-11C60 15 48 4 32 4z"/><circle class="pal-h" cx="21" cy="40" r="4.2"/><circle cx="19" cy="22" r="4.6" fill="#1e2a44"/><circle cx="31" cy="15" r="4.6" fill="#c4401b"/><circle cx="44" cy="19" r="4.6" fill="#f0b030"/><circle cx="50" cy="31" r="4.2" fill="#8fa3c4"/><circle cx="37" cy="29" r="4.2" fill="#f4a98f"/></svg></p>';
+    $("#main").innerHTML = h;
+  }
+
+  /* ---------- Comportements ---------- */
+  function setAcc(sec, open) {
+    var closed = false;
+    if (open) {
+      $$(".acc.open").forEach(function (o) { if (o !== sec) { o.classList.remove("open"); $(".acc-h", o).setAttribute("aria-expanded", "false"); closed = true; } });
+    }
+    sec.classList.toggle("open", open);
+    $(".acc-h", sec).setAttribute("aria-expanded", open ? "true" : "false");
+    return closed;
+  }
+  function wireAcc() {
+    $$(".acc").forEach(function (sec) {
+      $(".acc-h", sec).addEventListener("click", function () {
+        var open = !sec.classList.contains("open");
+        var closed = setAcc(sec, open);
+        /* un volet qui se referme au-dessus décale la page : on recale le volet ouvert sous la barre du haut */
+        if (open && closed) setTimeout(function () {
+          if (sec.getBoundingClientRect().top < 72) sec.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+        }, 540);
+      });
+    });
+    function openTo(id) {
+      var sec = document.getElementById(id);
+      if (!sec || !sec.classList.contains("acc")) return false;
+      var closed = setAcc(sec, true);
+      setTimeout(function () { sec.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); }, closed ? 540 : 60);
+      return true;
+    }
+    $$('a[href^="#"]').forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var id = a.getAttribute("href").slice(1);
+        if (id && openTo(id)) e.preventDefault();
+      });
+    });
+    if (location.hash && /^#[a-z]+$/.test(location.hash)) openTo(location.hash.slice(1));
+  }
+
+  function wireCv(D) {
+    /* Dans l'aperçu hébergé par claude.ai, ouvrir le PDF dans un nouvel onglet est refusé : on l'affiche dans la page. */
+    var enApercu = /claude\.ai|claudeusercontent/i.test(location.hostname);
+    if (!enApercu) return;
+    var box = document.createElement("div");
+    box.className = "cvbox"; box.hidden = true; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Mon CV");
+    box.innerHTML = '<div class="cvbox-in"><button type="button" class="cvbox-x" aria-label="Fermer">×</button><img src="img/cv-page-1.png" alt="CV, page 1"><img src="img/cv-page-2.png" alt="CV, page 2"></div>';
+    document.body.appendChild(box);
+    function close() { box.hidden = true; document.documentElement.classList.remove("cv-open"); }
+    box.addEventListener("click", function (e) { if (e.target === box || e.target.className === "cvbox-x") close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href$=".pdf"]');
+      if (!a) return;
+      e.preventDefault(); box.hidden = false; document.documentElement.classList.add("cv-open"); box.scrollTop = 0;
+    });
+  }
+
+  function wireFonctions(D) {
+    var tabs = $$(".tile"), panel = $("#panel"), cur = -1, wrap = $("#tiles");
+    function notch() {
+      if (cur < 0 || panel.hidden) return;
+      var t = tabs[cur].getBoundingClientRect(), p = panel.getBoundingClientRect();
+      panel.style.setProperty("--notch", Math.max(28, Math.min(p.width - 28, t.left + t.width / 2 - p.left)) + "px");
+    }
+    function show(i, o) {
+      o = o || {}; cur = i;
+      var f = D.fonctions[i];
+      tabs.forEach(function (t, k) { t.setAttribute("aria-selected", k === i ? "true" : "false"); t.tabIndex = k === i ? 0 : -1; });
+      panel.hidden = false;
+      panel.setAttribute("aria-labelledby", "tab-" + f.id);
+      panel.className = "panel c-" + f.col;
+      panel.innerHTML = '<div class="p-left"><div class="p-ill">' + f.icon + '</div><h3 class="swap">' + titreIA(f.t) + '</h3><p class="acc2 swap">' + esc(f.acc) + '</p>' +
+        (f.niv ? '<div class="niv swap">' + f.niv.map(function (n) { return '<div class="niv-b"><span class="niv-n">' + esc(n.n) + '</span><b>' + esc(n.t) + '</b><p>' + esc(n.d) + '</p></div>'; }).join("") + '</div>' : '<p class="d swap">' + esc(f.d) + '</p>') + '</div>' +
+        '<div class="p-right"><div class="cas-title">Vos cas métiers en action : exemples, non limitatifs</div><ul class="cas">' + f.cas.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join("") + '</ul>' +
+        '<div class="cas-title">Indicateurs de réussite : exemples</div><ul class="rzs">' + f.res.map(function (x) {
+          var w = Math.max(6, Math.round(x.ap / x.av * 100)), g = Math.round((1 - x.ap / x.av) * 100);
+          return '<li class="rz"><div class="rz-h"><b>' + esc(x.t) + '</b><span class="rz-tag' + (x.est ? ' est' : '') + '">' + (x.est ? 'Estimation' : 'Constaté') + '</span></div><p>' + esc(x.l) + '</p>' +
+            '<div class="rz-bars"><div class="rz-bar rz-avant"><span class="bl">Avant</span><span class="trk"><i style="--w:100%"></i></span><em>' + esc(x.avl) + '</em></div>' +
+            '<div class="rz-bar rz-apres"><span class="bl">Après</span><span class="trk"><i style="--w:' + w + '%"></i></span><em>' + esc(x.apl) + '</em></div></div><span class="rz-gain">−' + g + ' %</span></li>';
+        }).join("") + '</ul><p class="rz-note">Les chiffres marqués « Estimation » sont des ordres de grandeur issus de ma pratique, à confirmer cas par cas.</p></div>';
+      notch();
+      if (o.focus) tabs[i].focus();
+      if (o.reveal) setTimeout(function () { panel.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" }); }, 40);
+    }
+    document.addEventListener("openf", function (e) { wrap.classList.add("touched"); show(e.detail, { reveal: true }); });
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { wrap.classList.add("touched"); show(i, { reveal: window.matchMedia("(max-width: 860px)").matches }); });
+      t.addEventListener("keydown", function (e) {
+        var k = e.key, n = tabs.length, c = cur < 0 ? i : cur;
+        if (k === "ArrowRight" || k === "ArrowDown") { e.preventDefault(); show((c + 1) % n, { focus: true }); }
+        if (k === "ArrowLeft" || k === "ArrowUp") { e.preventDefault(); show((c + n - 1) % n, { focus: true }); }
+      });
+    });
+    tabs[0].tabIndex = 0; tabs.slice(1).forEach(function (t) { t.tabIndex = 0; });
+    window.addEventListener("resize", notch);
+  }
+
+  function wireFlow() {}
+
+  function initRoi(r) {
+    var range = $("#roi-range"), val = $("#roi-val"), bar = $("#roi-bar"), gain = $("#roi-gain"), hint = $("#slide-hint");
+    function upd() {
+      var v = +range.value / 100, m = 120 - v * (120 - 15);
+      val.textContent = fmtMin(m);
+      bar.style.transform = "scaleX(" + (m / 120).toFixed(3) + ")";
+      var g = 120 - m;
+      gain.textContent = g > 0.5 ? fmtMin(g) + " gagnées par PV (estimation)" : "Relecture manuelle";
+    }
+    range.addEventListener("input", function () { upd(); hint.classList.add("gone"); });
+    upd();
+    if (reduce) return;
+    var t0 = performance.now() + 500;
+    range.value = 0; upd();
+    (function step(t) {
+      if (t < t0) { requestAnimationFrame(step); return; }
+      var k = Math.min(1, (t - t0) / 1400), ease = 1 - Math.pow(1 - k, 3);
+      range.value = Math.round(ease * 100); upd();
+      if (k < 1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+
+  function wireRealisations(D) {
+    var tabs = $$(".rcard"), panel = $("#rpanel"), cur = -1;
+    function notch() {
+      if (cur < 0 || panel.hidden) return;
+      var t = tabs[cur].getBoundingClientRect(), p = panel.getBoundingClientRect();
+      panel.style.setProperty("--notch", Math.max(28, Math.min(p.width - 28, t.left + t.width / 2 - p.left)) + "px");
+    }
+    function show(i) {
+      cur = i; var r = D.realisations[i];
+      tabs.forEach(function (t, k) { t.setAttribute("aria-selected", k === i ? "true" : "false"); });
+      panel.hidden = false;
+      panel.setAttribute("aria-labelledby", "rtab-" + r.id);
+      panel.innerHTML = rdetail(r);
+      panel.style.animation = "none"; void panel.offsetWidth; panel.style.animation = "";
+      notch();
+      if (r.slider) initRoi(r);
+      setTimeout(function () { panel.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" }); }, 60);
+    }
+    tabs.forEach(function (t, i) { t.addEventListener("click", function () { show(i); }); });
+    window.addEventListener("resize", notch);
+  }
+
+  function wireCounters() {
+    var els = $$(".n[data-n]");
+    if (reduce || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        var n = +e.target.dataset.n, s = e.target.dataset.s, t0 = performance.now();
+        (function step(t) {
+          var k = Math.min(1, (t - t0) / 1100), v = Math.round(n * (1 - Math.pow(1 - k, 3)));
+          e.target.innerHTML = v + (s ? '<i>' + s + '</i>' : '');
+          if (k < 1) requestAnimationFrame(step);
+        })(t0);
+      });
+    }, { threshold: 0.6 });
+    els.forEach(function (el) { io.observe(el); });
+  }
+
+  function wireDash() {
+    var d = $("#dash");
+    if (!d) return;
+    if (reduce || !("IntersectionObserver" in window)) { d.classList.add("go"); return; }
+    new IntersectionObserver(function (es, o) {
+      es.forEach(function (e) { if (e.isIntersecting) { d.classList.add("go"); o.disconnect(); } });
+    }, { threshold: 0.2 }).observe(d);
+  }
+
+  function wireSpot() {
+    document.addEventListener("pointermove", function (e) {
+      var el = e.target.closest && e.target.closest(".spot");
+      if (!el) return;
+      var b = el.getBoundingClientRect();
+      el.style.setProperty("--mx", (e.clientX - b.left) + "px");
+      el.style.setProperty("--my", (e.clientY - b.top) + "px");
+    });
+    var ph = $("#photo");
+    if (ph) {
+      ph.addEventListener("pointermove", function (e) {
+        var b = ph.getBoundingClientRect();
+        ph.style.setProperty("--px", ((e.clientX - b.left) / b.width * 2 - 1).toFixed(3));
+        ph.style.setProperty("--py", ((e.clientY - b.top) / b.height * 2 - 1).toFixed(3));
+      });
+      ph.addEventListener("pointerleave", function () { ph.style.setProperty("--px", 0); ph.style.setProperty("--py", 0); });
+    }
+  }
+
+  function wireVideo() {
+    var fig = $("#presentation"); if (!fig) return;
+    var v = $("#vid-el"), b = $(".vid-play", fig), lab = $(".vid-lab", fig);
+    function start() { fig.classList.add("on"); v.controls = true; var p = v.play(); if (p && p.catch) p.catch(function () { fig.classList.remove("on"); v.controls = false; }); }
+    b.addEventListener("click", start);
+    v.addEventListener("ended", function () { fig.classList.remove("on"); v.controls = false; v.currentTime = 0; lab.textContent = "Revoir la présentation"; });
+  }
+
+  function wireNav() {
+    var links = $$(".tnav a");
+    if (!("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) links.forEach(function (a) { a.classList.toggle("on", a.dataset.s === e.target.id); });
+      });
+    }, { rootMargin: "-25% 0px -65% 0px" });
+    NAV.forEach(function (s) { var el = document.getElementById(s[0]); if (el) io.observe(el); });
+  }
+
+  function wireProgress() {
+    var bar = $("#progress"), tick = false, top = $("#top");
+    function upd() {
+      tick = false;
+      var h = document.documentElement.scrollHeight - window.innerHeight, y = window.scrollY || 0;
+      bar.style.transform = "scaleX(" + (h > 0 ? Math.min(1, y / h) : 0).toFixed(4) + ")";
+      top.classList.toggle("stuck", y > 12);
+    }
+    window.addEventListener("scroll", function () { if (!tick) { tick = true; requestAnimationFrame(upd); } }, { passive: true });
+    upd();
+  }
+
+  function wireContact() {
+    var panel = $("#cpanel"), scrim = $("#scrim");
+    function set(open) {
+      panel.classList.toggle("open", open); scrim.classList.toggle("open", open);
+      document.body.classList.toggle("cp-open", open);
+      panel.setAttribute("aria-hidden", open ? "false" : "true");
+      if (open) $("#cclose").focus();
+    }
+    $$("[data-open-contact]").forEach(function (b) { b.addEventListener("click", function () { set(true); }); });
+    $("#cclose").addEventListener("click", function () { set(false); });
+    scrim.addEventListener("click", function () { set(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && panel.classList.contains("open")) set(false); });
+    var b = $("#copy"), a = $("#addr");
+    b.addEventListener("click", function () {
+      var txt = a.textContent, lab = $("span", b);
+      function ok() { lab.textContent = "Copiée"; b.classList.add("done"); setTimeout(function () { lab.textContent = "Copier"; b.classList.remove("done"); }, 2200); }
+      function fallback() { var r = document.createRange(); r.selectNodeContents(a); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); lab.textContent = "Sélectionnée"; }
+      try { navigator.clipboard.writeText(txt).then(ok, fallback); } catch (e) { fallback(); }
+    });
+  }
+
+  fetch("data.json?v=" + Date.now()).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (D) {
+    D0 = D;
+    renderTop(D); renderMain(D);
+    wireCv(D);
+    wireAcc(); wireFonctions(D); wireFlow(); wireDash(); wireRealisations(D); wireCounters(); wireSpot(); wireVideo(); wireNav(); wireProgress(); wireContact();
+  }).catch(function (e) {
+    $("#main").innerHTML = '<div class="erreur">Le fichier data.json n\'a pas pu être chargé. Ouvrez la page depuis un serveur web (hébergement ou serveur local), pas en double-cliquant sur le fichier.</div>';
+    if (window.console) console.error(e);
+  });
+})();
+</script>
 </body>
 </html>

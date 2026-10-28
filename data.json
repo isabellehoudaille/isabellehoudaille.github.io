@@ -1,0 +1,685 @@
+{
+ "meta": {
+  "nom": "Isabelle Houdaille",
+  "titre": "Formatrice en IA",
+  "sousTitre": "IA pour la communication, les RH, l'UX et la conduite du changement, les cadres et les organisations à mission",
+  "email": "isabellehoudaille@icloud.com",
+  "lieu": "Basée en région parisienne, j'interviens dans toute la France",
+  "langues": "",
+  "linkedin": "https://www.linkedin.com/in/isabellehoudaille-ia-digital-innovation-creativite/",
+  "pdf": "CV_Isabelle_Houdaille.pdf",
+  "titre2": ""
+ },
+ "profil": {
+  "texte": "Vingt ans de communication, de marketing et de transformation digitale, dont quatre ans de conseil auprès de PME, d'ETI et de grands groupes. Je forme les managers et leurs équipes à l'IA, et j'interviens en sous-traitance pour des organismes de formation. Ma méthode commence par les fondamentaux, puis des cas d'usage ancrés dans chaque métier, pour gagner en productivité et en créativité. Elle va jusqu'à la mise en place d'un cockpit personnel : un second cerveau qui fait de l'IA un vrai partenaire de travail, en pleine puissance. Humain + IA, jamais l'un sans l'autre.",
+  "accent": "Humain + IA, jamais l'un sans l'autre."
+ },
+ "chiffres": [
+  {
+   "n": 340,
+   "s": "+",
+   "l": "heures de formation délivrées",
+   "d": "étudiants et adultes",
+   "icon": "clock",
+   "repartition": [
+    {
+     "l": "Master 1 et 2",
+     "h": 200
+    },
+    {
+     "l": "Adultes, 10 sessions de 14 h",
+     "h": 140
+    }
+   ]
+  },
+  {
+   "n": 750,
+   "s": "+",
+   "l": "étudiants de Master",
+   "d": "formés aux soft skills",
+   "icon": "cap",
+   "picto": {
+    "unite": 15,
+    "nb": 50
+   }
+  },
+  {
+   "n": 120,
+   "s": "",
+   "l": "adultes formés en 2026",
+   "d": "IA générative et agentique, 10 sessions de 14 h",
+   "icon": "people",
+   "sessions": {
+    "nb": 10,
+    "par": 12,
+    "duree": "14 h"
+   }
+  },
+  {
+   "n": 20,
+   "s": "+",
+   "l": "ans d'expérience",
+   "d": "communication, marketing, transformation digitale, innovation",
+   "icon": "case",
+   "annees": 20
+  }
+ ],
+ "publics": [
+  "cadres en poste",
+  "managers et leurs équipes",
+  "étudiants de l'enseignement supérieur",
+  "cadres en repositionnement professionnel"
+ ],
+ "fonctions": [
+  {
+   "id": "comm",
+   "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\"/><path d=\"M8 9h8M8 12h5\"/></svg>",
+   "t": "IA et communication professionnelle",
+   "acc": "L'IA tient la plume, vous gardez la voix.",
+   "d": "Un cockpit de pilotage et de création pour vos assets marketing et de communication : livret de marque, calendrier éditorial, visuels, un message pour chaque cible. L'IA décline, votre voix reste la vôtre.",
+   "cas": [
+    "Décliner un même message pour l'e-mailing, la plaquette, les réseaux sociaux, le communiqué et le site web",
+    "Bâtir un calendrier éditorial : un contenu pilier, plusieurs formats, un message par cible",
+    "Poser le livret de marque et la charte éditoriale",
+    "Créer des visuels, des infographies et de la data visualisation",
+    "Piloter sa communication avec un tableau de bord et des indicateurs d'impact",
+    "Planifier ses tâches récurrentes : veille, newsletter, bilan et récapitulatif"
+   ],
+   "court": "Communication",
+   "c": "indigo",
+   "col": "d1",
+   "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><path class=\"s f1\" d=\"M34 56 L86 32 L86 92 L34 74 Z\"/><rect class=\"s f2\" x=\"18\" y=\"54\" width=\"20\" height=\"24\" rx=\"5\"/><path class=\"s f2\" d=\"M44 76 L50 104 L66 104 L62 84\"/><path class=\"s\" d=\"M98 52 q9 10 0 20\"/><path class=\"s\" d=\"M108 42 q18 20 0 40\"/><path class=\"s f2\" d=\"M104 8 h44 a7 7 0 0 1 7 7 v20 a7 7 0 0 1-7 7 h-12 l-9 10 v-10 h-23 a7 7 0 0 1-7-7 v-20 a7 7 0 0 1 7-7z\"/><circle class=\"f3\" cx=\"116\" cy=\"25\" r=\"3.4\"/><circle class=\"f3\" cx=\"126\" cy=\"25\" r=\"3.4\"/><circle class=\"f3\" cx=\"136\" cy=\"25\" r=\"3.4\"/><path class=\"s f3\" d=\"M26 26 l4 9 9 4 -9 4 -4 9 -4-9 -9-4 9-4z\"/></svg>",
+   "res": [
+    {
+     "t": "Un livre blanc",
+     "l": "plan, rédaction, relectures, versions",
+     "avl": "4 j",
+     "apl": "1 j",
+     "av": 28,
+     "ap": 7,
+     "est": true
+    },
+    {
+     "t": "Un message décliné en 6 supports",
+     "l": "emailing, plaquette, réseaux sociaux, communiqué, site",
+     "avl": "6 h",
+     "apl": "1 h 30",
+     "av": 360,
+     "ap": 90,
+     "est": true
+    },
+    {
+     "t": "Le calendrier éditorial d'un trimestre",
+     "l": "thèmes, formats et dates posés avant d'écrire",
+     "avl": "3 j",
+     "apl": "4 h",
+     "av": 21,
+     "ap": 4,
+     "est": true
+    }
+   ]
+  },
+  {
+   "id": "rh",
+   "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6\"/><path d=\"M16 5.2a3 3 0 0 1 0 5.6M18 14.3c1.8.7 3 2.5 3 4.7\"/></svg>",
+   "t": "IA, RH et communication interne",
+   "acc": "Moins de paperasse, plus d'humain.",
+   "d": "On cartographie les irritants, puis on s'attaque aux fiches de poste, aux parcours d'intégration, aux FAQ salariés, aux tableaux de bord RH. Résultat : du temps, de la créativité et de la cohérence collective qui reviennent à l'équipe.",
+   "cas": [
+    "Rédiger des fiches de poste et des contenus de marque employeur, en contrôlant les biais",
+    "Transformer un accord ou un texte juridique en livret salarié et en FAQ RH",
+    "Relire un procès-verbal de CSE : décisions, actions et points sensibles",
+    "Construire un parcours d'intégration : étapes, supports et checklist pour le manager",
+    "Concevoir un catalogue d'ateliers ou un plan de formation, avec ses supports",
+    "Suivre les indicateurs RH et le budget formation : tableau de bord, bilan mensuel et to-do list des échéances"
+   ],
+   "court": "RH et communication interne",
+   "c": "sky",
+   "col": "d2",
+   "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><path class=\"s f3\" d=\"M82 112 q0-34 28-34 q28 0 28 34z\"/><circle class=\"s f3\" cx=\"110\" cy=\"56\" r=\"14\"/><path class=\"s f1\" d=\"M20 112 q0-40 33-40 q33 0 33 40z\"/><circle class=\"s f2\" cx=\"53\" cy=\"48\" r=\"17\"/><circle class=\"s f2\" cx=\"128\" cy=\"22\" r=\"15\"/><path class=\"s\" d=\"M121 22 l5 6 9-11\"/><path class=\"s\" d=\"M44 98 h18\"/></svg>",
+   "res": [
+    {
+     "t": "Le renouvellement du catalogue d'ateliers d'une association nationale",
+     "l": "un agent conçoit les ateliers à partir d'un brief, bibliothèque de 60+ prompts",
+     "avl": "tous les 3 ans",
+     "apl": "tous les 3 mois",
+     "av": 36,
+     "ap": 3,
+     "est": false
+    },
+    {
+     "t": "Le procès-verbal mensuel d'un CSE",
+     "l": "relu avec un agent conçu avec une DRH",
+     "avl": "2 h",
+     "apl": "15 min",
+     "av": 120,
+     "ap": 15,
+     "est": true
+    },
+    {
+     "t": "Une fiche de poste et son annonce",
+     "l": "rédigées, relues et contrôlées sur les biais",
+     "avl": "2 h",
+     "apl": "30 min",
+     "av": 120,
+     "ap": 30,
+     "est": true
+    }
+   ]
+  },
+  {
+   "id": "ux",
+   "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M9 9v11\"/></svg>",
+   "t": "IA, UX et conduite du changement",
+   "acc": "L'IA synthétise, l'enquête reste humaine.",
+   "d": "Du verbatim à la recommandation : audit, analyse de données, personas, prototypage, ateliers, tableaux de bord d'adoption. L'IA s'invite à chaque étape du workflow, le terrain garde le dernier mot.",
+   "cas": [
+    "Dépouiller des entretiens et des enquêtes, puis prioriser les irritants selon leur impact et l'effort requis",
+    "Élaborer des fiches personas et concevoir des parcours utilisateurs",
+    "Rédiger des recommandations et un plan d'action pour le comité de pilotage",
+    "Prototyper des interfaces à partir des parcours validés",
+    "Construire le plan d'adoption : managers relais, kit et formation",
+    "Piloter l'adoption avec un tableau de bord, un bilan et un récapitulatif hebdomadaire"
+   ],
+   "court": "UX et conduite du changement",
+   "c": "violet",
+   "col": "d3",
+   "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><rect class=\"s fw\" x=\"18\" y=\"18\" width=\"104\" height=\"82\" rx=\"9\"/><path class=\"s\" d=\"M18 36 H122\"/><circle class=\"f3\" cx=\"29\" cy=\"27\" r=\"3\"/><circle class=\"f2\" cx=\"39\" cy=\"27\" r=\"3\"/><rect class=\"s f1\" x=\"30\" y=\"46\" width=\"38\" height=\"26\" rx=\"5\"/><path class=\"s\" d=\"M78 50 H110 M78 60 H104 M78 70 H110\"/><rect class=\"s f3\" x=\"30\" y=\"80\" width=\"26\" height=\"12\" rx=\"5\"/><path class=\"s f2\" d=\"M104 74 L104 116 L114 106 L122 124 L130 120 L122 103 L135 103 Z\"/></svg>",
+   "res": [
+    {
+     "t": "Une enquête ouverte de 2 200 répondants",
+     "l": "analysée en 6 personas",
+     "avl": "5 j",
+     "apl": "1 j",
+     "av": 35,
+     "ap": 7,
+     "est": true
+    },
+    {
+     "t": "L'arborescence d'un intranet",
+     "l": "regroupement des rubriques après analyse",
+     "avl": "1 j",
+     "apl": "2 h",
+     "av": 7,
+     "ap": 2,
+     "est": true
+    },
+    {
+     "t": "La synthèse de 20 entretiens",
+     "l": "thèmes, verbatims, points saillants",
+     "avl": "2 j",
+     "apl": "3 h",
+     "av": 14,
+     "ap": 3,
+     "est": true
+    }
+   ]
+  },
+  {
+   "id": "cadre",
+   "icon": "<svg viewBox=\"2.5 4 19 19\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3.5 17a8.5 8.5 0 1 1 17 0\"/><path d=\"M12 17l4.2-5.2\"/><circle cx=\"12\" cy=\"17\" r=\"1.2\"/><path d=\"M6.2 11.2l1 .6M12 8.2v1.1M17.8 11.2l-1 .6\"/></svg>",
+   "t": "IA et manager augmenté",
+   "court": "Manager augmenté",
+   "col": "d4",
+   "c": "amber",
+   "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><path class=\"s f3\" d=\"M62 78 L42 104 L64 98 Z\"/><path class=\"s f3\" d=\"M98 78 L118 104 L96 98 Z\"/><path class=\"s f2\" d=\"M80 10 C106 28 110 64 100 92 H60 C50 64 54 28 80 10 Z\"/><circle class=\"s f1\" cx=\"80\" cy=\"48\" r=\"11\"/><path class=\"s f1\" d=\"M68 94 Q80 128 92 94 Z\"/><path class=\"s f3\" d=\"M130 30 l3 7 7 3 -7 3 -3 7 -3-7 -7-3 7-3z\"/><path class=\"s\" d=\"M26 40 h10 M31 35 v10\"/></svg>",
+   "acc": "L'IA fait le travail, le manager garde la décision.",
+   "d": "",
+   "cas": [
+    "Installer son cockpit de pilotage, relié à sa messagerie, à son agenda et à ses documents",
+    "Transformer les échanges en décisions : comptes rendus, synthèses et plans d'action",
+    "Planifier ses tâches récurrentes : veille, newsletter, bilan, récapitulatif et to-do list",
+    "Travailler en équipe avec une base de connaissances partagée et interrogeable",
+    "Penser avec l'IA : un partenaire de réflexion pour challenger ses idées et gagner en créativité",
+    "Construire son offre, son positionnement et ses prises de parole pour avoir de l'impact"
+   ],
+   "res": [
+    {
+     "t": "La veille de la semaine",
+     "l": "collecte et synthèse automatisées, 2 newsletters par semaine",
+     "avl": "3 h",
+     "apl": "20 min",
+     "av": 180,
+     "ap": 20,
+     "est": false
+    },
+    {
+     "t": "Une proposition commerciale argumentée",
+     "l": "avec un cockpit relié à ses outils",
+     "avl": "1 j",
+     "apl": "3 h",
+     "av": 7,
+     "ap": 3,
+     "est": true
+    },
+    {
+     "t": "Le compte rendu d'une visio d'une heure",
+     "l": "synthèse, décisions, actions avec échéances",
+     "avl": "45 min",
+     "apl": "10 min",
+     "av": 45,
+     "ap": 10,
+     "est": true
+    }
+   ],
+   "niv": [
+    {
+     "n": "Niveau 1",
+     "t": "Acculturation : les bons réflexes, puis vos premiers assistants",
+     "d": "Les fondamentaux, le prompting, les agents : on comprend l'IA et on renouvelle ses pratiques sur son métier. Puis on se bâtit ses assistants, ses projets et ses tâches planifiées : des livrables à ses couleurs, des documents qu'on interroge, et du temps gagné chaque semaine."
+    },
+    {
+     "n": "Niveau 2",
+     "t": "Cockpit de pilotage avec Claude Code",
+     "d": "On construit ensemble votre système de travail avec l'IA. Vos outils et vos dossiers sont reliés, une mémoire garde le fil, et l'ensemble travaille en continu pour vous laisser le temps de décider."
+    }
+   ]
+  },
+  {
+   "id": "miss",
+   "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z\"/></svg>",
+   "t": "IA, associations et entreprises à mission",
+   "acc": "L'IA doit prouver son impact.",
+   "d": "Budget et impact en tableaux de bord, rapports pour les financeurs, gestion de projets, animation de réseau : l'IA sert la mission, et l'impact se démontre.",
+   "cas": [
+    "Rédiger des rapports et des bilans pour les financeurs : indicateurs, impact, message adapté à chacun",
+    "Monter un projet ou un dossier : diagnostic, objectifs, plan d'action et budget",
+    "Passer en revue des dizaines de projets avec des critères équitables, avant un CODIR",
+    "Piloter le budget, les financements et les indicateurs d'impact dans un tableau de bord partagé",
+    "Valoriser ses actions : un bilan d'impact décliné en newsletter et en contenus, avec un message par cible",
+    "Planifier le suivi de la mission : veille sur les financeurs, bilan d'impact et to-do list des échéances"
+   ],
+   "court": "Associations et mission",
+   "c": "mint",
+   "col": "d5",
+   "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><path class=\"s f3\" d=\"M80 112 C14 72 30 16 80 44 C130 16 146 72 80 112 Z\"/><path class=\"s f1\" d=\"M80 92 C66 74 80 56 100 60 C102 76 94 90 80 92 Z\"/><path class=\"s\" d=\"M80 92 C84 80 90 70 98 64\"/><path class=\"s f2\" d=\"M132 14 l3 7 7 3 -7 3 -3 7 -3-7 -7-3 7-3z\"/><path class=\"s f2\" d=\"M22 24 l2 5 5 2 -5 2 -2 5 -2-5 -5-2 5-2z\"/></svg>",
+   "res": [
+    {
+     "t": "Le passage en revue de 50 projets avant un CODIR",
+     "l": "mêmes critères appliqués à chacun",
+     "avl": "35 h",
+     "apl": "10 h",
+     "av": 35,
+     "ap": 10,
+     "est": false
+    },
+    {
+     "t": "Un rapport pour un financeur",
+     "l": "indicateurs, bilan, narratif d'impact",
+     "avl": "2 j",
+     "apl": "4 h",
+     "av": 14,
+     "ap": 4,
+     "est": true
+    },
+    {
+     "t": "Le compte rendu d'un conseil d'administration",
+     "l": "relevé de décisions et actions",
+     "avl": "3 h",
+     "apl": "45 min",
+     "av": 180,
+     "ap": 45,
+     "est": true
+    }
+   ]
+  }
+ ],
+ "roi": {
+  "titre": "Un agent conçu avec une DRH",
+  "sous": "Valider le procès-verbal mensuel du CSE",
+  "avantMin": 120,
+  "apresMin": 15,
+  "agent": "Relit le procès-verbal du CSE à partir des notes de préparation de la DRH : propos reportés sans interprétation, avant ses arbitrages. Prototypes testés avec elle, outils imposés par l'organisation, données anonymisées, relecture humaine.",
+  "autres": [
+   {
+    "v": "3 ans → 3 mois",
+    "l": "production d'ateliers",
+    "avant": 36,
+    "apres": 3,
+    "unite": "mois"
+   },
+   {
+    "v": "4 j → 1 j",
+    "l": "production d'un contenu",
+    "avant": 4,
+    "apres": 1,
+    "unite": "jours"
+   },
+   {
+    "v": "3 h → 20 min",
+    "l": "veille hebdomadaire",
+    "avant": 180,
+    "apres": 20,
+    "unite": "min"
+   }
+  ]
+ },
+ "experiences": [
+  {
+   "t": "Formatrice et consultante en IA générative",
+   "o": "Activité indépendante",
+   "p": "2025 - aujourd'hui",
+   "b": [
+    "Ingénierie pédagogique : conception de formations et de supports, sessions interactives en présentiel et en distanciel. Programme : fondamentaux, LLM et assistants, éthique, sécurité des données et RGPD, prompt engineering, productivité, créativité, agents IA, projets IA",
+    "10 sessions de 14 h, 12 participants chacune (120 adultes, 140 h) en 2026, pour un réseau d'insertion : managers et leurs équipes, conseillers d'insertion",
+    "Accompagnement individuel de cadres vers l'employabilité avec l'IA",
+    "Cockpit de pilotage de ma propre activité, conçu seule avec Claude : 20+ outils en 6 catégories ; agenda, tri des e-mails, veille et 2 newsletters par semaine, tâches planifiées et récapitulatif hebdomadaire, tableaux de bord, stratégie de contenu, prospection, supports de formation et propositions commerciales ; design system de mon identité visuelle, stratégie marketing, propositions de valeur…"
+   ]
+  },
+  {
+   "t": "Intervenante en Master Communication et IA",
+   "o": "Université De Vinci, La Défense (Paris)",
+   "p": "2019 - aujourd'hui",
+   "b": [
+    "Plus de 200 heures en Master 1 et 2, en présentiel et en distanciel : plus de 750 étudiants formés aux soft skills (créativité, innovation, intelligence collective, design thinking), avec facilitation d'ateliers interactifs",
+    "Hackathon conçu et animé pour l'Institut Mines-Télécom, environ 30 étudiants de Master : 10 entretiens d'experts par équipe, modèle KISS, pitch en 5 étapes"
+   ]
+  },
+  {
+   "t": "Consultante senior en transformation digitale",
+   "o": "Arctus",
+   "p": "2021 - 2025",
+   "clients": "Orano, Renault Group, Air Liquide, CEVA Logistics, TechnipFMC, Urssaf, Les Mousquetaires",
+   "b": [
+    "Digital workplaces (intranets, plateformes collaboratives) et plans d'adoption construits avec les RH : formation, kits managériaux",
+    "Diagnostics terrain, ateliers utilisateurs, personas, recommandations et feuille de route, restitutions en comité de pilotage",
+    "Gestion de projets de transformation digitale"
+   ]
+  },
+  {
+   "t": "Responsable Transformation",
+   "o": "Econocom, d'abord Senior Marketing Communications Manager",
+   "p": "2010 - 2019",
+   "b": [
+    "Marketing de l'offre d'une BU dédiée à la transformation digitale, à l'innovation et à l'agilité : message, proposition de valeur, packaging",
+    "Développement du réseau de partenaires internes",
+    "Plateformes de communication de l'offre, co-design et mise en marché d'offres Éducation, Retail et BI"
+   ]
+  }
+ ],
+ "outils": [
+  {
+   "g": "Assistants IA et LLM",
+   "i": [
+    "Copilot",
+    "Gemini",
+    "ChatGPT",
+    "Claude",
+    "Mistral",
+    "Grok"
+   ]
+  },
+  {
+   "g": "Analyse de sources",
+   "i": [
+    "NotebookLM",
+    "Perplexity"
+   ]
+  },
+  {
+   "g": "Agents et automatisation",
+   "i": [
+    "Agents sur mesure",
+    "Applications sur mesure",
+    "Chatbots",
+    "RAG",
+    "Connecteurs MCP",
+    "Automatisations"
+   ]
+  },
+  {
+   "g": "Environnement de travail",
+   "i": [
+    "Microsoft 365",
+    "Google Workspace",
+    "Slack"
+   ]
+  },
+  {
+   "g": "Méthodes",
+   "i": [
+    "Ingénierie pédagogique",
+    "Animation en présentiel et à distance",
+    "Prompting",
+    "Diagnostic des usages",
+    "Design thinking",
+    "Facilitation",
+    "Conduite du changement",
+    "UX : personas, parcours, wireframes",
+    "RGPD et sécurité des données"
+   ]
+  }
+ ],
+ "formation": [
+  {
+   "a": "2025-2026",
+   "t": "IA générative et IA agentique",
+   "e": "Revolia et Studeria"
+  },
+  {
+   "a": "2020",
+   "t": "Design Thinking et Facilitation",
+   "e": "Klap Design"
+  },
+  {
+   "a": "2019",
+   "t": "Change Management et Leadership",
+   "e": "ESSEC"
+  },
+  {
+   "a": "2003",
+   "t": "Graphic et Digital Design",
+   "e": "Parsons School of Design"
+  },
+  {
+   "a": "1995",
+   "t": "Master en Management (Bac+5)",
+   "e": "IAE Auvergne"
+  }
+ ],
+ "parcours": [
+  {
+   "a": "2007-2010",
+   "t": "Resp. Marketing et Communication",
+   "e": "Prodomo Sécurité, Paris"
+  },
+  {
+   "a": "2004-2007",
+   "t": "Consultante en Communication et Marketing",
+   "e": "Loukma, Paris"
+  },
+  {
+   "a": "2000-2004",
+   "t": "Chef de produit Développement",
+   "e": "Lancôme / L'Oréal, New York, États-Unis"
+  },
+  {
+   "a": "1997-2000",
+   "t": "Assistante Marketing International",
+   "e": "LPI Cosmetics, New York, États-Unis"
+  }
+ ],
+ "icones": {
+  "tel": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19.9 14.5V18a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 3 6.3 2 2 0 0 1 5 4z\"/></svg>",
+  "mail": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3.5 7 8.5 6 8.5-6\"/></svg>",
+  "lieu": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/></svg>",
+  "in": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.6-1.1 1.9-1.9 3.8-1.9 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z\"/></svg>",
+  "pdf": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h8l4 4v14H6z\"/><path d=\"M14 3v4h4\"/><path d=\"M9 13h6M9 17h6\"/></svg>",
+  "lang": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18\"/><path d=\"M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z\"/></svg>",
+  "raw": {
+   "tel": "<path d=\"M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19.9 14.5V18a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 3 6.3 2 2 0 0 1 5 4z\"/>",
+   "mail": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3.5 7 8.5 6 8.5-6\"/>",
+   "lieu": "<path d=\"M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/>",
+   "lang": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18\"/><path d=\"M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z\"/>",
+   "pdf": "<path d=\"M6 3h8l4 4v14H6z\"/><path d=\"M14 3v4h4\"/><path d=\"M9 13h6M9 17h6\"/>",
+   "clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/>",
+   "cap": "<path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5\"/>",
+   "people": "<circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6\"/><path d=\"M16 5.2a3 3 0 0 1 0 5.6M18 14.3c1.8.7 3 2.5 3 4.7\"/>",
+   "case": "<rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18\"/>",
+   "person": "<circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7\"/>",
+   "spark": "<path d=\"M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z\"/><path d=\"M19 16v4M17 18h4\"/>",
+   "check": "<path d=\"M5 12.5l4.5 4.5L19 7\"/>",
+   "plus": "<path d=\"M12 5v14M5 12h14\"/>",
+   "copy": "<rect x=\"8\" y=\"8\" width=\"12\" height=\"12\" rx=\"2\"/><path d=\"M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2\"/>",
+   "down": "<path d=\"M6 9l6 6 6-6\"/>",
+   "arrow": "<path d=\"M5 12h14M13 6l6 6-6 6\"/>",
+   "tool": "<path d=\"M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5l-2.5 2.5-2.5-.5-.5-2.5z\"/>",
+   "send": "<path d=\"M3 11l18-7-7 18-2.5-7.5z\"/>",
+   "cursor": "<path d=\"M5 3l14 7-6 2-2 6z\"/>",
+   "close": "<path d=\"M6 6l12 12M18 6L6 18\"/>",
+   "contrast": "<circle cx=\"12\" cy=\"12\" r=\"8\"/><path d=\"M12 4v16a8 8 0 0 0 0-16z\" fill=\"currentColor\"/>",
+   "menu": "<path d=\"M4 7h16M4 12h16M4 17h16\"/>"
+  }
+ },
+ "posture": {
+  "titre": "Ma posture : le métier, la posture, les outils",
+  "intro": "Une IA utile à une équipe tient trois choses ensemble, dans cet ordre.",
+  "img": "img/posture.jpg",
+  "alt": "Illustration : Isabelle Houdaille assise sur un tabouret, un carnet sur les genoux",
+  "items": [
+   {
+    "n": 1,
+    "t": "Le métier",
+    "s": "Les usages avant l'outil.",
+    "d": "Je pars du travail réel : qui fait quoi, où ça coince, ce que l'outil changera. Une démarche UX : j'écoute les cas d'usage de vos équipes, avec leurs mots, pour une IA qui sert dès le lundi matin."
+   },
+   {
+    "n": 2,
+    "t": "La posture",
+    "s": "Le professionnel reste aux commandes.",
+    "d": "L'IA copilote, l'humain pose le problème, arbitre et signe. Avec les agents, je précise qui fixe le périmètre, quels contrôles s'appliquent, et quand reprendre la main. Un usage raisonné, éthique et responsable."
+   },
+   {
+    "n": 3,
+    "t": "Les outils",
+    "s": "Choisis pour vos contraintes, pas pour la mode.",
+    "d": "ChatGPT, Claude, Copilot, Gemini, Mistral, les IA sectorielles. Sécurité, confidentialité, digital workplace : on choisit les environnements et les LLM, puis les fonctionnalités utiles. Génératif, agents, collaboratif."
+   }
+  ],
+  "cloture": "Le métier seul ne dit pas quoi installer. La posture seule reste théorique. Les outils seuls changent tous les six mois. Tenus ensemble, comme un système, le métier donne le terrain, la posture fixe les règles, les outils exécutent : les usages passent le cap des trois semaines.",
+  "pied": "Humain + IA, jamais l'un sans l'autre.",
+  "lien": "Voir trois références concrètes"
+ },
+ "contact": {
+  "titre": "Contactez-moi",
+  "texte": "Un projet, une équipe à former, une envie de vous faire accompagner ? Écrivez-moi quelques lignes sur votre besoin : je vous réponds personnellement.",
+  "objet": "Prise de contact à la suite de votre CV",
+  "bouton": "Me contacter",
+  "accroche": "On se parle ?",
+  "ecrire": "Écrivez-moi"
+ },
+ "titres": {
+  "domaines": "Domaines d'intervention",
+  "chiffres": "Mon expérience en chiffres",
+  "publics": "Publics formés",
+  "expertise": "Mes 5 domaines d'expertise en IA",
+  "terrain": "Sur le terrain, comment ça se passe",
+  "terrainHint": "Présentiel, distanciel, conférences et ateliers interactifs, masterclass"
+ },
+ "realisations": [
+  {
+   "id": "biblio",
+   "t": "60+ prompts, une base commune enrichie à chaque formation",
+   "sous": "Réseau d'insertion professionnelle",
+   "img": "img/bibliotheque.jpg",
+   "alt": "Couverture du Cockpit IA du CIP, la bibliothèque de prompts",
+   "chiffre": "60+",
+   "chiffreL": "prompts",
+   "d": "Une soixantaine de prompts, écrits avec les conseillers, pour ne jamais repartir de zéro. Chaque formation enrichit la bibliothèque, la suivante en profite, et tout le réseau avec.",
+   "pts": [
+    "Les éléments clés pour comprendre l'IA et ses outils",
+    "La posture à adopter et l'art de questionner",
+    "Des assistants et des agents, des prompts pour aller plus loin",
+    "Des exercices d'échauffement ludiques et des ateliers de spécification d'agents"
+   ],
+   "gain": "Bénéfice : une base commune qui s'enrichit à chaque formation, au profit de tout le réseau"
+  },
+  {
+   "id": "agent",
+   "t": "Un agent IA pour renouveler le catalogue d'ateliers tous les 3 mois",
+   "sous": "Association nationale de défense des droits des consommateurs",
+   "img": "img/agent.jpg",
+   "alt": "Écran d'un agent IA de l'association",
+   "chiffre": "3 ans → 3 mois",
+   "chiffreL": "entre deux renouvellements du catalogue d'ateliers",
+   "d": "Tous les trois ans, l'association renouvelait son catalogue d'ateliers : un chantier lourd. Avec l'agent, c'est tous les trois mois. À partir d'un simple brief, il cadre le besoin, propose des idées et construit chaque atelier pour une cible et un objectif précis. Le catalogue colle enfin à un marché qui bouge vite, et gagne en attractivité.",
+   "pts": [
+    "Un brief, un besoin cadré, des idées d'ateliers pour une cible et un objectif précis",
+    "Déroulé, supports, évaluation, mesure de l'impact : l'atelier est construit de bout en bout",
+    "Une pédagogie différenciée selon le public, et des concepts qu'on n'aurait pas imaginés seul"
+   ],
+   "gain": "Avant : tous les 3 ans. Maintenant : tous les 3 mois, un cycle divisé par 12",
+   "avant": 36,
+   "apres": 3
+  },
+  {
+   "id": "projets",
+   "t": "L'IA pour analyser 50 projets avant le comité de sélection",
+   "sous": "Fondation d'entreprise, soutien à des projets à impact dans les territoires",
+   "img": "img/projets.jpg",
+   "alt": "Illustration : des documents variés passent dans un entonnoir et sont classés en trois dossiers, synthèse et classification automatique",
+   "chiffre": "35 h → 10 h",
+   "chiffreL": "de lecture pour passer en revue 50 projets tous les 2 mois",
+   "avant": 35,
+   "apres": 10,
+   "d": "Tous les deux mois, une cinquantaine de dossiers, de formats et de qualité inégaux, attendent le comité de sélection. L'IA passe chacun au crible d'une même grille de critères équitables, centrée sur l'impact attendu. Le temps de lecture tombe de 35 h à 10 h, la décision reste humaine.",
+   "pts": [
+    "Une grille de critères équitables et centrée sur l'impact, identique pour chaque projet",
+    "Données anonymisées, outils validés, relecture humaine avant le comité"
+   ],
+   "gain": "Bénéfice : 10 h de lecture au lieu de 35 h, tous les 2 mois, avec une même grille pour chaque projet"
+  }
+ ],
+ "terrain": [
+  {
+   "src": "img/adultes1.jpg",
+   "alt": "Atelier en salle de formation, groupe de 8 à 12 personnes",
+   "cap": "Présentiel : groupes de 8 à 12 personnes"
+  },
+  {
+   "src": "img/adultes2.jpg",
+   "alt": "Atelier en petits groupes de 4",
+   "cap": "Ateliers en petits groupes de 4"
+  },
+  {
+   "src": "img/conference.jpg",
+   "alt": "Conférence interactive devant un public assis, avec écran et ateliers visuels",
+   "cap": "Conférences interactives"
+  },
+  {
+   "src": "img/atelier-conf.jpg",
+   "alt": "Participants en atelier autour d'un paperboard couvert de post-it, pendant une conférence interactive",
+   "cap": "Ateliers participatifs"
+  },
+  {
+   "src": "img/jeunes2.jpg",
+   "alt": "Étudiants de Master en atelier de design",
+   "cap": "Ateliers de design en équipes"
+  },
+  {
+   "src": "img/distanciel.jpg",
+   "alt": "Séance de formation à distance réunissant une vingtaine de participants de lieux différents",
+   "cap": "Ateliers en distanciel"
+  }
+ ],
+ "offre": {
+  "titre": "Trois façons de travailler ensemble",
+  "hint": "",
+  "items": [
+   {
+    "t": "Vous êtes un organisme de formation",
+    "d": "Votre catalogue, votre relation client, votre dossier OPCO : je conçois et j'anime vos modules sur l'IA générative et agentique, en sous-traitance pédagogique."
+   },
+   {
+    "t": "Vous êtes une entreprise",
+    "d": "Vos managers et vos équipes se forment sur leur propre terrain : leurs métiers, leurs cas d'usage, leurs irritants. Financement possible par votre OPCO, via un organisme partenaire."
+   },
+   {
+    "t": "Vous êtes manager et vous voulez être augmenté, pas remplacé",
+    "d": "Accompagnement en tout petit groupe ou en individuel : on renouvelle vos pratiques avec l'IA, puis on installe votre cockpit de pilotage. Financement personnel, ou pris en charge par votre entreprise."
+   }
+  ],
+  "pied": "Chaque prestation se construit sur devis, à partir de votre contexte et de vos équipes.",
+  "piedLien": "Parlons de votre besoin"
+ }
+}
