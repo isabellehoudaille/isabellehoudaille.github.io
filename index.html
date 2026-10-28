@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20261028120000">
+<link rel="stylesheet" href="style.css?v=20261028140000">
 </head>
 <body>
 <div id="progress" aria-hidden="true"></div>
@@ -55,11 +55,9 @@
       '<h2 class="cp-h">' + esc(D.contact.titre) + '</h2>' +
       (D.contact.texte ? '<p class="cp-txt">' + esc(D.contact.texte) + '</p>' : '') +
       (D.contact.rdvLien ? '<a class="cta" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
-      '<a class="cta' + (D.contact.rdvLien ? ' alt' : '') + '" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.ecrire || "Ouvrir ma messagerie") + '</a>' +
-      '<div class="addr"><span id="addr">' + esc(D.meta.email) + '</span><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
+      '<div class="addr"><a id="addr" href="' + esc(mailto()) + '">' + esc(D.meta.email) + '</a><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
       '<ul class="cp-list"><li><a class="in" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + '<span>Profil LinkedIn</span></a></li>' +
-      '<li><a href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + '<span>CV en PDF</span></a></li>' +
-      '<li class="plain">' + ico("lieu") + '<span>' + esc(D.meta.lieu) + '</span></li></ul></aside>';
+      '<li><a href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + '<span>CV en PDF</span></a></li></ul></aside>';
   }
 
   /* ---------- Hero ---------- */
