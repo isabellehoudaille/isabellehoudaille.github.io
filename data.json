@@ -1,17 +1,18 @@
 {
  "meta": {
   "nom": "Isabelle Houdaille",
-  "titre": "Formatrice en IA",
+  "titre": "Consultante formatrice en IA",
   "sousTitre": "IA pour la communication, les RH, l'UX et la conduite du changement, les cadres et les organisations à mission",
   "email": "ih@cadreiactif.com",
   "lieu": "Basée en région parisienne, j'interviens dans toute la France",
   "langues": "",
   "linkedin": "https://www.linkedin.com/in/isabellehoudaille-ia-digital-innovation-creativite/",
   "pdf": "CV_Isabelle_Houdaille.pdf",
-  "titre2": ""
+  "titre2": "",
+  "role": "Conduite du changement · Learning & Development"
  },
  "profil": {
-  "texte": "Vingt ans de communication, de marketing et de transformation digitale, dont quatre ans de conseil auprès de PME, d'ETI et de grands groupes. Je forme les managers et leurs équipes à l'IA, et j'interviens en sous-traitance pour des organismes de formation. Ma méthode commence par les fondamentaux, puis des cas d'usage ancrés dans chaque métier, pour gagner en productivité et en créativité. Elle va jusqu'à la mise en place d'un cockpit personnel : un second cerveau qui fait de l'IA un vrai partenaire de travail, en pleine puissance. Humain + IA, jamais l'un sans l'autre.",
+  "texte": "Vingt ans de communication, de marketing et de transformation digitale, dont quatre ans de conseil auprès de PME, d'ETI et de grands groupes. Aujourd'hui, je conduis le changement par l'IA : je diagnostique les besoins, je forme les équipes, je construis avec elles des systèmes de travail augmentés, je mesure ce que ça change.\nJ'ai transformé ma façon de produire avant d'accompagner les autres, et je sais où l'IA apporte de la valeur, et où elle n'en apporte pas. Bilingue anglais, j'interviens aussi pour des organismes de formation.\nHumain + IA, jamais l'un sans l'autre.",
   "accent": "Humain + IA, jamais l'un sans l'autre."
  },
  "chiffres": [
@@ -58,8 +59,8 @@
   {
    "n": 20,
    "s": "+",
-   "l": "ans d'expérience",
-   "d": "communication, marketing, transformation digitale, innovation",
+   "l": "ans d'expérience, dont 4 ans de conseil",
+   "d": "communication, marketing, transformation digitale, conduite du changement",
    "icon": "case",
    "annees": 20
   }
@@ -124,13 +125,13 @@
    "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6\"/><path d=\"M16 5.2a3 3 0 0 1 0 5.6M18 14.3c1.8.7 3 2.5 3 4.7\"/></svg>",
    "t": "IA, RH et communication interne",
    "acc": "Moins de paperasse, plus d'humain.",
-   "d": "On cartographie les irritants, puis on s'attaque aux fiches de poste, aux parcours d'intégration, aux FAQ salariés, aux tableaux de bord RH. Résultat : du temps, de la créativité et de la cohérence collective qui reviennent à l'équipe.",
+   "d": "Diagnostic des besoins avec les équipes, puis fiches de poste, parcours d'intégration, FAQ salariés, tableaux de bord RH. Du temps, de la créativité et de la cohérence collective reviennent à l'équipe.",
    "cas": [
     "Rédiger des fiches de poste et des contenus de marque employeur, en contrôlant les biais",
     "Transformer un accord ou un texte juridique en livret salarié et en FAQ RH",
     "Relire un procès-verbal de CSE : décisions, actions et points sensibles",
     "Construire un parcours d'intégration : étapes, supports et checklist pour le manager",
-    "Concevoir un catalogue d'ateliers ou un plan de formation, avec ses supports",
+    "Concevoir un parcours de formation en blended learning, avec ses supports",
     "Suivre les indicateurs RH et le budget formation : tableau de bord, bilan mensuel et to-do list des échéances"
    ],
    "court": "RH et communication interne",
@@ -172,13 +173,13 @@
    "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M9 9v11\"/></svg>",
    "t": "IA, UX et conduite du changement",
    "acc": "L'IA synthétise, l'enquête reste humaine.",
-   "d": "Du verbatim à la recommandation : audit, analyse de données, personas, prototypage, ateliers, tableaux de bord d'adoption. L'IA s'invite à chaque étape du workflow, le terrain garde le dernier mot.",
+   "d": "Du diagnostic à l'adoption des usages : entretiens, personas, design thinking, ateliers utilisateurs, tableau de bord d'adoption. L'IA s'invite à chaque étape, le terrain garde le dernier mot.",
    "cas": [
     "Dépouiller des entretiens et des enquêtes, puis prioriser les irritants selon leur impact et l'effort requis",
-    "Élaborer des fiches personas et concevoir des parcours utilisateurs",
+    "Faciliter des ateliers utilisateurs, puis élaborer personas et parcours",
     "Rédiger des recommandations et un plan d'action pour le comité de pilotage",
     "Prototyper des interfaces à partir des parcours validés",
-    "Construire le plan d'adoption : managers relais, kit et formation",
+    "Conduire le projet de changement : plan d'adoption des usages, managers relais, kit et formation",
     "Piloter l'adoption avec un tableau de bord, un bilan et un récapitulatif hebdomadaire"
    ],
    "court": "UX et conduite du changement",
@@ -265,13 +266,22 @@
    "niv": [
     {
      "n": "Niveau 1",
-     "t": "Acculturation : les bons réflexes, puis vos premiers assistants",
-     "d": "Les fondamentaux, le prompting, les agents : on comprend l'IA et on renouvelle ses pratiques sur son métier. Puis on se bâtit ses assistants, ses projets et ses tâches planifiées : des livrables à ses couleurs, des documents qu'on interroge, et du temps gagné chaque semaine."
+     "t": "Transformer ses pratiques de travail avec l'IA",
+     "pts": [
+      "Comprendre les fondamentaux de l'IA générative et agentique",
+      "Maîtriser le prompting et adopter la bonne posture pour obtenir des résultats fiables et pertinents",
+      "Créer des assistants personnalisés et implémenter des agents IA pour exploiter ses documents, structurer ses méthodes de travail et automatiser les tâches les plus chronophages et répétitives"
+     ],
+     "g": "Gagner du temps, améliorer la qualité des productions et se recentrer sur les missions à valeur ajoutée"
     },
     {
      "n": "Niveau 2",
-     "t": "Cockpit de pilotage avec Claude Code",
-     "d": "On construit ensemble votre système de travail avec l'IA. Vos outils et vos dossiers sont reliés, une mémoire garde le fil, et l'ensemble travaille en continu pour vous laisser le temps de décider."
+     "t": "Système de travail augmenté par l'IA avec Claude Code ou Codex",
+     "pts": [
+      "Concevoir et mettre en place un véritable « second cerveau » augmenté par l'IA, organisé autour de vos outils, dossiers, documents et connaissances",
+      "Structurer une mémoire persistante, relier vos ressources, créer des workflows et automatiser des tâches récurrentes"
+     ],
+     "g": "Capitaliser sur vos informations, retrouver le fil de vos projets, fluidifier votre organisation et libérer du temps pour l'analyse et la décision"
     }
    ]
   },
@@ -541,28 +551,28 @@
     "n": 1,
     "t": "Le métier",
     "s": "Les usages avant l'outil.",
-    "d": "Je pars du travail réel : qui fait quoi, où ça coince, ce que l'outil changera. Une démarche UX : j'écoute les cas d'usage de vos équipes, avec leurs mots, pour une IA qui sert dès le lundi matin."
+    "d": "Je pars du travail réel : diagnostic des besoins, qui fait quoi, où ça coince, ce que l'outil changera. Une démarche UX et de design thinking : j'écoute les cas d'usage de vos équipes, avec leurs mots, pour une IA qui sert dès le lundi matin."
    },
    {
     "n": 2,
     "t": "La posture",
     "s": "Le professionnel reste aux commandes.",
-    "d": "L'IA copilote, l'humain pose le problème, arbitre et signe. Avec les agents, je précise qui fixe le périmètre, quels contrôles s'appliquent, et quand reprendre la main. Un usage raisonné, éthique et responsable."
+    "d": "L'IA copilote, l'humain pose le problème, arbitre et signe. Je dis aussi où elle n'apporte rien : un usage qui ne tient pas se retire. Avec les agents, je précise qui fixe le périmètre, quels contrôles s'appliquent, et quand reprendre la main. Un usage raisonné, éthique et responsable."
    },
    {
     "n": 3,
     "t": "Les outils",
     "s": "Choisis pour vos contraintes, pas pour la mode.",
-    "d": "ChatGPT, Claude, Copilot, Gemini, Mistral, les IA sectorielles. Sécurité, confidentialité, digital workplace : on choisit les environnements et les LLM, puis les fonctionnalités utiles. Génératif, agents, collaboratif."
+    "d": "ChatGPT, Claude, Copilot, Gemini, Mistral, les IA sectorielles. Sécurité, confidentialité, digital workplace : on choisit les environnements et les LLM, puis les fonctionnalités utiles. Je conçois des systèmes de travail augmentés par l'IA : assistants et agents, ingénierie du contexte, mémoire et gestion des connaissances, workflows intelligents, automatisation des processus."
    }
   ],
-  "cloture": "Le métier seul ne dit pas quoi installer. La posture seule reste théorique. Les outils seuls changent tous les six mois. Tenus ensemble, comme un système, le métier donne le terrain, la posture fixe les règles, les outils exécutent : les usages passent le cap des trois semaines.",
+  "cloture": "Le métier seul ne dit pas quoi installer. La posture seule reste théorique. Les outils seuls changent tous les six mois. Tenus ensemble, comme un système, le métier donne le terrain, la posture fixe les règles, les outils exécutent : l'adoption des usages passe le cap des trois semaines.",
   "pied": "Humain + IA, jamais l'un sans l'autre.",
   "lien": "Voir trois références concrètes"
  },
  "contact": {
   "titre": "Contactez-moi",
-  "texte": "Un projet, une équipe à former, une envie de vous faire accompagner ? Réservez 20 minutes pour en parler, ou écrivez-moi : je vous réponds personnellement.",
+  "texte": "Un projet de transformation, une équipe à former, un poste à pourvoir ? Réservez 20 minutes pour en parler, ou écrivez-moi : je vous réponds personnellement.",
   "objet": "Prise de contact depuis votre site",
   "bouton": "Me contacter",
   "accroche": "On se parle ?",
@@ -574,7 +584,7 @@
   "domaines": "Domaines d'intervention",
   "chiffres": "Mon expérience en chiffres",
   "publics": "Publics formés",
-  "expertise": "Mes 5 domaines d'expertise en IA",
+  "expertise": "Mes 5 domaines d'expertise : l'IA appliquée aux métiers",
   "terrain": "Sur le terrain, comment ça se passe",
   "terrainHint": "Présentiel, distanciel, conférences et ateliers interactifs, masterclass"
  },
@@ -594,7 +604,8 @@
     "Des assistants et des agents, des prompts pour aller plus loin",
     "Des exercices d'échauffement ludiques et des ateliers de spécification d'agents"
    ],
-   "gain": "Bénéfice : une base commune qui s'enrichit à chaque formation, au profit de tout le réseau"
+   "gain": "Bénéfice : une base commune qui s'enrichit à chaque formation, au profit de tout le réseau",
+   "type": "Formation et ingénierie pédagogique"
   },
   {
    "id": "agent",
@@ -612,7 +623,8 @@
    ],
    "gain": "Avant : tous les 3 ans. Maintenant : tous les 3 mois, un cycle divisé par 12",
    "avant": 36,
-   "apres": 3
+   "apres": 3,
+   "type": "Conseil et conception d'un agent IA"
   },
   {
    "id": "projets",
@@ -629,7 +641,8 @@
     "Une grille de critères équitables et centrée sur l'impact, identique pour chaque projet",
     "Données anonymisées, outils validés, relecture humaine avant le comité"
    ],
-   "gain": "Bénéfice : 10 h de lecture au lieu de 35 h, tous les 2 mois, avec une même grille pour chaque projet"
+   "gain": "Bénéfice : 10 h de lecture au lieu de 35 h, tous les 2 mois, avec une même grille pour chaque projet",
+   "type": "Conseil et mesure de l'impact"
   }
  ],
  "terrain": [
@@ -665,23 +678,28 @@
   }
  ],
  "offre": {
-  "titre": "Trois façons de travailler ensemble",
+  "titre": "Des façons de travailler ensemble",
   "hint": "",
   "items": [
    {
     "t": "Vous êtes un organisme de formation",
-    "d": "Votre catalogue, votre relation client, votre dossier OPCO : je conçois et j'anime vos modules sur l'IA générative et agentique, en sous-traitance pédagogique."
+    "d": "Votre catalogue, votre relation client, votre dossier OPCO : je conçois vos parcours (ingénierie pédagogique, blended learning) et j'anime vos modules sur l'IA générative et agentique, en sous-traitance pédagogique."
    },
    {
     "t": "Vous êtes une entreprise",
-    "d": "Vos managers et vos équipes se forment sur leur propre terrain : leurs métiers, leurs cas d'usage, leurs irritants. Financement possible par votre OPCO, via un organisme partenaire."
+    "d": "Vos managers et vos équipes se forment sur leur propre terrain : leurs métiers, leurs cas d'usage, leurs irritants. Je conduis le changement avec vous : diagnostic, formation, adoption, mesure de l'impact. Financement possible par votre OPCO, via un organisme partenaire."
    },
    {
     "t": "Vous êtes manager et vous voulez être augmenté, pas remplacé",
     "d": "Accompagnement en tout petit groupe ou en individuel : on renouvelle vos pratiques avec l'IA, puis on installe votre cockpit de pilotage. Financement personnel, ou pris en charge par votre entreprise."
+   },
+   {
+    "t": "Vous recrutez",
+    "d": "Pour installer l'IA dans vos équipes, en poste (CDI, CDD) ou en mission, je conduis le projet de changement, conçois les parcours de formation et fais monter les autres en compétence."
    }
   ],
-  "pied": "Chaque prestation se construit sur devis, à partir de votre contexte et de vos équipes.",
+  "pied": "Chaque intervention se construit à partir de votre contexte et de vos équipes.",
   "piedLien": "Parlons de votre besoin"
- }
+ },
+ "niv_label": "Ce que vous y gagnez"
 }

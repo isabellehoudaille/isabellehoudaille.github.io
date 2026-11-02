@@ -1264,3 +1264,28 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
 /* pied de page : mention IA plus proche du copyright */
 .pied-copy { padding-bottom: 0; }
 .pied-ia { padding-top: 0; margin-top: 3px; }
+
+/* v41 : profil en deux paragraphes, étiquettes de mission, offre à quatre cartes */
+.profil-texte p { margin: 0; }
+.profil-texte p + p { margin-top: .7em; }
+.profil-texte p:last-child { margin-top: .9em; }
+.r-type { display: block; margin: 4px 0 2px; font-size: .78rem; font-weight: 700; letter-spacing: .02em; color: var(--a1, #b13a17); }
+.offre-grid.n4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .offre-grid.n4 { grid-template-columns: minmax(0, 1fr); } }
+
+/* v41 : manager augmenté, niveaux lisibles (titre, points courts, gain mis en valeur) */
+.niv { gap: 16px; }
+.niv-b { padding: 18px 20px 16px; }
+.niv-b b { margin: 4px 0 10px; font-size: 1.15rem; font-weight: 800; letter-spacing: -.01em; color: #1e2a44; }
+.niv-pts { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 8px; }
+.niv-pts li { position: relative; padding-left: 18px; color: var(--soft); font-size: .96rem; line-height: 1.5; }
+.niv-pts li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--dc, #ee8a68); }
+.niv-gain { margin: 0; padding-top: 12px; border-top: 1px dashed var(--line2); display: grid; gap: 4px; }
+.niv-gl { font-size: .74rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--a1); }
+.niv-gain strong { font-weight: 800; color: #1e2a44; line-height: 1.45; font-size: .98rem; }
+
+/* contenu statique pour les robots : invisible à l'écran tant que le JavaScript n'a pas pris le relais */
+.ssr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.role { letter-spacing: .15em; white-space: nowrap; }
+@media (max-width: 520px) { .role { white-space: normal; letter-spacing: .12em; line-height: 1.5; } }
