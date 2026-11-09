@@ -1340,3 +1340,7 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
 /* v28 : onglet LinkedIn à droite (lien, plus un bouton) */
 a.tab-contact { text-decoration: none; }
 a.tab-contact .tc-ic svg { width: 1.1em; height: 1.1em; }
+
+/* v29 : onglet LinkedIn aux couleurs de LinkedIn (bleu officiel #0A66C2) */
+a.tab-contact { background: #0A66C2; --glow: rgba(10, 102, 194, .45); color: #fff; }
+a.tab-contact:hover, a.tab-contact:focus-visible { background: #004182; }
