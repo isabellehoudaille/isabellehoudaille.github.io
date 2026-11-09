@@ -1300,3 +1300,22 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
 .ba-av span { color: var(--mut); }
 .ba-ap { color: var(--fg); font-weight: 600; }
 .ba-ap span { color: #c4401b; }
+
+/* v26 : offre phare en tête, déclinaisons dessous ; livrables à gauche, avant/après à droite */
+.tiles .tiles-sub { grid-column: 1 / -1 !important; margin: 14px 0 0; font-family: "Lora", Georgia, serif; font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--mut); }
+.tile .t-badge { align-self: flex-start; font-family: "Lora", Georgia, serif; font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #c4401b; border: 1px solid #c4401b; border-radius: 99px; padding: 3px 10px; margin-top: 10px; background: #fff; }
+.tile .t-sub { order: 2; display: block; margin-top: 8px; font-size: .95rem; line-height: 1.4; color: var(--soft, #4a5568); max-width: 34em; }
+@media (min-width: 1021px) {
+  .tiles .tile.tile-phare { grid-column: 1 / -1 !important; min-height: 240px !important; }
+  .tiles .tile:not(.tile-phare) { grid-column: span 3 !important; min-height: 220px !important; }
+}
+@media (max-width: 1020px) {
+  .tiles .tile.tile-phare { grid-column: 1 / -1 !important; }
+  .tiles .tile:not(.tile-phare) { grid-column: span 1 !important; }
+}
+.p-left .cas { align-self: stretch; width: 100%; }
+.p-left .cas-title { margin-top: 18px; }
+
+.tiles > .panel { grid-column: 1 / -1 !important; order: 3; margin-top: 4px; }
+.tiles.phare-open > .panel { order: 1; }
+.tiles.phare-open > :not(.tile-phare):not(.panel) { order: 2; }
