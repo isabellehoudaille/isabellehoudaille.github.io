@@ -1289,3 +1289,14 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
 
 .role { letter-spacing: .15em; white-space: nowrap; }
 @media (max-width: 520px) { .role { white-space: normal; letter-spacing: .12em; line-height: 1.5; } }
+
+/* v25 : avant / après qualitatif (domaine adoption) */
+.bas { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--fg); }
+.ba { padding: 14px 0; border-bottom: 1px solid var(--line2, rgba(30,42,68,.14)); }
+.ba b { display: block; font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.08rem; color: var(--fg); letter-spacing: -.01em; margin-bottom: 6px; }
+.ba p { margin: 3px 0; font-size: .92rem; line-height: 1.45; display: grid; grid-template-columns: 3.6em minmax(0, 1fr); gap: 10px; }
+.ba p span { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; padding-top: .25em; }
+.ba-av { color: var(--mut); }
+.ba-av span { color: var(--mut); }
+.ba-ap { color: var(--fg); font-weight: 600; }
+.ba-ap span { color: #c4401b; }

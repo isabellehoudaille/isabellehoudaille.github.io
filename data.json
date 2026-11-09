@@ -9,10 +9,10 @@
   "linkedin": "https://www.linkedin.com/in/isabellehoudaille-ia-digital-innovation-creativite/",
   "pdf": "CV_Isabelle_Houdaille.pdf",
   "titre2": "",
-  "role": "Conduite du changement · Learning & Development"
+  "role": "Adoption de l'IA · Conduite du changement · Learning & Development"
  },
  "profil": {
-  "texte": "Vingt ans de communication, de marketing et de transformation digitale, dont quatre ans de conseil auprès de PME, d'ETI et de grands groupes. Aujourd'hui, je conduis le changement par l'IA : je diagnostique les besoins, je forme les équipes, je construis avec elles des systèmes de travail augmentés, je mesure ce que ça change.\nJ'ai transformé ma façon de produire avant d'accompagner les autres, et je sais où l'IA apporte de la valeur, et où elle n'en apporte pas. Bilingue anglais, j'interviens aussi pour des organismes de formation.\nHumain + IA, jamais l'un sans l'autre.",
+  "texte": "Vingt ans de communication, de marketing et de transformation digitale, dont quatre ans de conseil auprès de PME, d'ETI et de grands groupes. Aujourd'hui, j'accompagne l'adoption de l'IA et la conduite du changement. Beaucoup d'organisations ont mis Copilot, Gemini, Claude ou ChatGPT à la disposition de leurs salariés : sans accompagnement, l'usage reste partiel, la valeur faible et le flou grandit.\nJe pars du travail réel : je diagnostique les besoins, je pose avec la DSI un cadre que chacun comprend, je forme les équipes, je construis avec elles des systèmes de travail augmentés, je mesure ce que ça change. J'ai transformé ma façon de produire avant d'accompagner les autres, et je sais où l'IA apporte de la valeur, et où elle n'en apporte pas. Bilingue anglais, j'interviens aussi pour des organismes de formation.\nHumain + IA, jamais l'un sans l'autre.",
   "accent": "Humain + IA, jamais l'un sans l'autre."
  },
  "chiffres": [
@@ -172,81 +172,56 @@
    "id": "ux",
    "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M9 9v11\"/></svg>",
    "t": "IA, adoption et conduite du changement",
-   "acc": "Les outils sont déployés, les usages restent à installer.",
-   "d": "Vos licences sont en place, vos équipes n'ont pas encore changé leur façon de travailler. Je pars des tâches réelles et des irritants, je pose avec la DSI des règles de données que chacun comprend, je construis avec vos managers des pratiques qui tiennent, et je mesure ce qui change. On avance par paliers : votre comité décide à chaque étape.",
+   "acc": "Les outils sont à disposition, les usages ne suivent pas.",
+   "d": "Copilot, Gemini, Claude, ChatGPT : les outils d'IA sont à la disposition des salariés. Pour autant, les usages ne sont pas raisonnés. Sans accompagnement, chacun fait comme il peut, l'IA reste sous-employée, la valeur créée est faible et le flou grandit. J'aide à passer de l'outil à l'usage : comprendre ce qui se fait, poser un cadre que chacun comprend, mobiliser les métiers et les managers, mesurer ce qui change. Votre comité décide à chaque étape.",
    "cas": [
-    "Cartographier les outils, les licences et les usages réels, y compris ceux qui échappent à la DSI",
-    "Dépouiller des entretiens et des enquêtes, puis prioriser les irritants selon leur impact et l'effort requis",
-    "Rédiger avec la DSI un guide d'une page : quel outil pour quelle donnée, quoi vérifier avant d'envoyer",
-    "Animer des ateliers par famille de métiers sur des tâches réelles, puis en tirer des fiches de pratiques",
-    "Former des relais volontaires et des managers, avec un kit de dix minutes par réunion d'équipe",
-    "Piloter l'adoption avec un baromètre qui sépare ce qui est estimé, perçu et mesuré"
+    "Un état des lieux des outils d'IA et de leurs usages réels",
+    "Un cadre de règles : données, accès, rôles, risques",
+    "Des cas d'usage utiles à chaque métier, avec leurs bonnes pratiques",
+    "Des supports, des parcours et des temps d'acculturation",
+    "Des managers et des relais outillés pour faire vivre les usages",
+    "Un tableau de bord de l'adoption et de la valeur, et une feuille de route"
    ],
    "court": "Adoption et conduite du changement",
    "c": "violet",
    "col": "d3",
    "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><rect class=\"s fw\" x=\"18\" y=\"18\" width=\"104\" height=\"82\" rx=\"9\"/><path class=\"s\" d=\"M18 36 H122\"/><circle class=\"f3\" cx=\"29\" cy=\"27\" r=\"3\"/><circle class=\"f2\" cx=\"39\" cy=\"27\" r=\"3\"/><rect class=\"s f1\" x=\"30\" y=\"46\" width=\"38\" height=\"26\" rx=\"5\"/><path class=\"s\" d=\"M78 50 H110 M78 60 H104 M78 70 H110\"/><rect class=\"s f3\" x=\"30\" y=\"80\" width=\"26\" height=\"12\" rx=\"5\"/><path class=\"s f2\" d=\"M104 74 L104 116 L114 106 L122 124 L130 120 L122 103 L135 103 Z\"/></svg>",
-   "res": [
-    {
-     "t": "Les verbatims d'une enquête sur les usages de l'IA",
-     "l": "regroupés par irritant et par famille de métiers",
-     "avl": "1 j",
-     "apl": "30 min",
-     "av": 7,
-     "ap": 0.5,
-     "est": true
-    },
-    {
-     "t": "La synthèse de 20 entretiens",
-     "l": "thèmes, verbatims, points saillants",
-     "avl": "2 j",
-     "apl": "3 h",
-     "av": 14,
-     "ap": 3,
-     "est": true
-    },
-    {
-     "t": "Un guide « quel outil pour quelle donnée »",
-     "l": "une page, rédigée puis relue avec la DSI",
-     "avl": "2 j",
-     "apl": "3 h",
-     "av": 14,
-     "ap": 3,
-     "est": true
-    }
-   ],
-   "niv": [
-    {
-     "n": "Palier 1",
-     "t": "Voir clair, en quatre semaines",
-     "pts": [
-      "Cadrer avec votre sponsor les trois résultats attendus à trois mois, le périmètre pilote et qui anime quoi",
-      "Écouter une dizaine de personnes (sécurité, juridique, RH, communication interne, terrain, experts, utilisateurs déjà actifs) et inventorier les outils et les usages réels",
-      "Poser un guide d'une page « quoi mettre où » (feu vert, orange, rouge) validé avec votre sécurité, et ouvrir une boîte à irritants"
-     ],
-     "g": "Un plan clair, des règles que chacun comprend et un premier effet visible en moins de quinze jours"
-    },
-    {
-     "n": "Palier 2",
-     "t": "Prouver sur un petit périmètre",
-     "pts": [
-      "Choisir deux ou trois équipes pilotes et partir de leurs tâches réelles",
-      "Construire huit à dix fiches de cas, un guide de prompting et des modèles d'assistants d'équipe, avec un entraînement sur les gestes qui comptent",
-      "Faire vivre une saison de rendez-vous de trente minutes, portée par des relais volontaires"
-     ],
-     "g": "La preuve, avant et après, de ce qui change vraiment, en séparant ce qui est estimé, perçu et mesuré"
-    },
-    {
-     "n": "Palier 3",
-     "t": "Étendre et passer la main",
-     "pts": [
-      "Élargir par vagues, avec des animateurs internes et des relais formés",
-      "Installer le rituel de dix minutes par mois des managers",
-      "Suivre l'usage réel dans un tableau de bord : qui s'en sert, à quelle fréquence, pour quelles tâches"
-     ],
-     "g": "Une organisation qui tient sans prestataire, et des licences justifiées par des usages observés"
-    }
-   ]
+   "casTitre": "Ce que vous pouvez obtenir : exemples de livrables",
+   "ba": {
+    "titre": "Avant, après",
+    "items": [
+     {
+      "t": "Du flou à la clarté",
+      "avant": "Des outils déployés, sans vue claire sur qui s'en sert, ni pour quoi faire",
+      "apres": "Une vision partagée des usages, des priorités et des règles"
+     },
+     {
+      "t": "De la shadow IA à des usages raisonnés",
+      "avant": "Des outils personnels utilisés en cachette, des règles floues, la peur de mal faire",
+      "apres": "Des usages raisonnés, sécurisés et éthiques, dans un cadre que chacun comprend"
+     },
+     {
+      "t": "Du retrait à l'engagement",
+      "avant": "Des collaborateurs inquiets ou en retrait, des managers sans repères",
+      "apres": "Des équipes engagées, des managers et des relais qui portent le sujet"
+     },
+     {
+      "t": "De l'outil à la productivité",
+      "avant": "Des licences payées, un usage ponctuel",
+      "apres": "Des outils de productivité utilisés chaque jour, dans les métiers"
+     },
+     {
+      "t": "De l'intention à la valeur",
+      "avant": "Des promesses, sans preuve de ce que cela apporte",
+      "apres": "Une valeur démontrée et pilotée, qui justifie l'investissement"
+     },
+     {
+      "t": "De la dépendance à l'autonomie",
+      "avant": "Une organisation qui dépend de prestataires pour faire vivre l'IA",
+      "apres": "Une organisation amplifiée par l'IA, qui tient par elle-même"
+     }
+    ]
+   }
   },
   {
    "id": "cadre",

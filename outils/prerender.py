@@ -39,7 +39,10 @@ for f in D["fonctions"]:
     elif f.get("d"):
         out.append(f"<p>{e(f['d'])}</p>")
     out.append("<h4>Vos cas métiers en action : exemples, non limitatifs</h4>" + ul(f["cas"]))
-    out.append("<h4>Indicateurs de réussite : exemples</h4><ul>" + "".join(res(r) for r in f["res"]) + "</ul></article>")
+    if f.get("ba"):
+        out.append(f"<h4>{e(f['ba'].get('titre', 'Avant, après'))}</h4><ul>" + "".join(f"<li>{e(x['t'])} : avant, {e(x['avant'])} ; après, {e(x['apres'])}</li>" for x in f["ba"]["items"]) + "</ul></article>")
+    else:
+        out.append("<h4>Indicateurs de réussite : exemples</h4><ul>" + "".join(res(r) for r in f["res"]) + "</ul></article>")
 out.append("</section>")
 
 out.append('<section id="chiffres-ssr">')
