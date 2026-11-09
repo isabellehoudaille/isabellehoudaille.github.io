@@ -2,7 +2,7 @@
  "meta": {
   "nom": "Isabelle Houdaille",
   "titre": "Consultante formatrice en IA",
-  "sousTitre": "IA pour la communication, les RH, l'UX et la conduite du changement, les cadres et les organisations à mission",
+  "sousTitre": "IA pour la communication, les RH, l'adoption des outils et la conduite du changement, les cadres et les organisations à mission",
   "email": "ih@cadreiactif.com",
   "lieu": "Basée en région parisienne, j'interviens dans toute la France",
   "langues": "",
@@ -171,43 +171,43 @@
   {
    "id": "ux",
    "icon": "<svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M9 9v11\"/></svg>",
-   "t": "IA, UX et conduite du changement",
-   "acc": "L'IA synthétise, l'enquête reste humaine.",
-   "d": "Du diagnostic à l'adoption des usages : entretiens, personas, design thinking, ateliers utilisateurs, tableau de bord d'adoption. L'IA s'invite à chaque étape, le terrain garde le dernier mot.",
+   "t": "IA, adoption et conduite du changement",
+   "acc": "Les outils sont déployés, les usages restent à installer.",
+   "d": "Vos licences sont en place, vos équipes n'ont pas encore changé leur façon de travailler. Je pars des tâches réelles et des irritants, je pose avec la DSI des règles de données que chacun comprend, je construis avec vos managers des pratiques qui tiennent, et je mesure ce qui change.",
    "cas": [
+    "Cartographier les outils, les licences et les usages réels, y compris ceux qui échappent à la DSI",
     "Dépouiller des entretiens et des enquêtes, puis prioriser les irritants selon leur impact et l'effort requis",
-    "Faciliter des ateliers utilisateurs, puis élaborer personas et parcours",
-    "Rédiger des recommandations et un plan d'action pour le comité de pilotage",
-    "Prototyper des interfaces à partir des parcours validés",
-    "Conduire le projet de changement : plan d'adoption des usages, managers relais, kit et formation",
-    "Piloter l'adoption avec un tableau de bord, un bilan et un récapitulatif hebdomadaire"
+    "Rédiger avec la DSI un guide d'une page : quel outil pour quelle donnée, quoi vérifier avant d'envoyer",
+    "Animer des ateliers par famille de métiers sur des tâches réelles, puis en tirer des fiches de pratiques",
+    "Former des relais volontaires et des managers, avec un kit de dix minutes par réunion d'équipe",
+    "Piloter l'adoption avec un baromètre qui sépare ce qui est estimé, perçu et mesuré"
    ],
-   "court": "UX et conduite du changement",
+   "court": "Adoption et conduite du changement",
    "c": "violet",
    "col": "d3",
    "ill": "<svg viewBox=\"0 0 160 130\" aria-hidden=\"true\"><rect class=\"s fw\" x=\"18\" y=\"18\" width=\"104\" height=\"82\" rx=\"9\"/><path class=\"s\" d=\"M18 36 H122\"/><circle class=\"f3\" cx=\"29\" cy=\"27\" r=\"3\"/><circle class=\"f2\" cx=\"39\" cy=\"27\" r=\"3\"/><rect class=\"s f1\" x=\"30\" y=\"46\" width=\"38\" height=\"26\" rx=\"5\"/><path class=\"s\" d=\"M78 50 H110 M78 60 H104 M78 70 H110\"/><rect class=\"s f3\" x=\"30\" y=\"80\" width=\"26\" height=\"12\" rx=\"5\"/><path class=\"s f2\" d=\"M104 74 L104 116 L114 106 L122 124 L130 120 L122 103 L135 103 Z\"/></svg>",
    "res": [
     {
-     "t": "Une enquête ouverte de 2 200 répondants",
-     "l": "analysée en 6 personas",
-     "avl": "5 j",
-     "apl": "1 j",
-     "av": 35,
-     "ap": 7,
-     "est": true
-    },
-    {
-     "t": "L'arborescence d'un intranet",
-     "l": "regroupement des rubriques après analyse",
+     "t": "Les verbatims d'une enquête sur les usages de l'IA",
+     "l": "regroupés par irritant et par famille de métiers",
      "avl": "1 j",
-     "apl": "2 h",
+     "apl": "30 min",
      "av": 7,
-     "ap": 2,
+     "ap": 0.5,
      "est": true
     },
     {
      "t": "La synthèse de 20 entretiens",
      "l": "thèmes, verbatims, points saillants",
+     "avl": "2 j",
+     "apl": "3 h",
+     "av": 14,
+     "ap": 3,
+     "est": true
+    },
+    {
+     "t": "Un guide « quel outil pour quelle donnée »",
+     "l": "une page, rédigée puis relue avec la DSI",
      "avl": "2 j",
      "apl": "3 h",
      "av": 14,
@@ -406,7 +406,7 @@
     "n": 1,
     "t": "Le métier",
     "s": "Les usages avant l'outil.",
-    "d": "Je pars du travail réel : diagnostic des besoins, qui fait quoi, où ça coince, ce que l'outil changera. Une démarche UX et de design thinking : j'écoute les cas d'usage de vos équipes, avec leurs mots, pour une IA qui sert dès le lundi matin."
+    "d": "Je pars du travail réel : qui fait quoi, où ça coince, ce que l'outil changera. J'écoute les cas d'usage de vos équipes avec leurs mots, par des entretiens, des enquêtes et l'observation du terrain, pour une IA qui sert dès le lundi matin."
    },
    {
     "n": 2,
@@ -542,7 +542,7 @@
    },
    {
     "t": "Vous êtes une entreprise",
-    "d": "Vos managers et vos équipes se forment sur leur propre terrain : leurs métiers, leurs cas d'usage, leurs irritants. Je conduis le changement avec vous : diagnostic, formation, adoption, mesure de l'impact. Financement possible par votre OPCO, via un organisme partenaire."
+    "d": "Vos outils d'IA sont déployés, vos équipes ne s'en servent pas encore, ou pas comme vous l'espériez. Je regarde ce que font vraiment vos collaborateurs, je construis avec vos métiers des cas d'usage concrets, je forme vos managers et vos relais, et je mesure ce qui change. Financement possible par votre OPCO, via un organisme partenaire."
    },
    {
     "t": "Vous êtes manager et vous voulez être augmenté, pas remplacé",
@@ -550,7 +550,7 @@
    },
    {
     "t": "Vous recrutez",
-    "d": "Pour installer l'IA dans vos équipes, en poste (CDI, CDD) ou en mission, je conduis le projet de changement, conçois les parcours de formation et fais monter les autres en compétence."
+    "d": "Pour faire passer l'IA du déploiement aux usages dans vos équipes, en poste (CDI, CDD) ou en mission, je conduis le projet d'adoption, conçois les parcours de formation et fais monter les autres en compétence."
    }
   ],
   "pied": "Chaque intervention se construit à partir de votre contexte et de vos équipes.",
