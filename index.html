@@ -83,7 +83,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20261110110000">
+<link rel="stylesheet" href="style.css?v=20261110120000">
 <noscript><style>.ssr{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal;padding:24px;max-width:860px;margin:0 auto;font-family:Georgia,serif;line-height:1.6}</style></noscript>
 </head>
 <body>
@@ -181,18 +181,11 @@
       '<div class="top-in"><a class="logo" href="#haut" aria-label="Haut de page"><span>IH</span>Isabelle Houdaille</a>' +
       '<nav class="tnav" aria-label="Sections">' + NAV.map(function (n) { return '<a href="#' + n[0] + '" data-s="' + n[0] + '">' + n[1] + '</a>'; }).join("") + '</nav>' +
       '<div class="top-act">' +
-      '<button class="cta sm" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button></div></div>';
+      '<a class="cta sm" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.bouton) + '</a></div></div>';
 
     $("#dock").innerHTML =
       '<a class="tab-contact" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener" aria-label="' + esc(D.contact.accroche || "Mon LinkedIn") + ' (nouvel onglet)"><span class="tc-ic">' + D.icones["in"] + '</span><span class="tc-tx">' + esc(D.contact.accroche || "Mon LinkedIn") + '</span></a>' +
-      '<div class="scrim" id="scrim"></div>' +
-      '<aside class="cpanel" id="cpanel" aria-hidden="true" aria-label="Contact"><button class="icon-btn x" type="button" id="cclose" aria-label="Fermer">' + ico("close") + '</button>' +
-      '<div class="cp-photo"><span class="logo-b">IH</span><div><b>' + esc(D.meta.nom) + '</b><span>' + esc(D.meta.titre) + (D.meta.titre2 ? ' ' + esc(D.meta.titre2) : '') + '</span></div></div>' +
-      '<h2 class="cp-h">' + esc(D.contact.titre) + '</h2>' +
-      (D.contact.texte ? '<p class="cp-txt">' + esc(D.contact.texte) + '</p>' : '') +
-      (D.contact.rdvLien ? '<a class="cta" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
-      '<div class="addr"><a id="addr" href="' + esc(mailto()) + '">' + esc(D.meta.email) + '</a><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
-      '</aside>';
+      '';
   }
 
   /* ---------- Hero ---------- */
@@ -204,7 +197,7 @@
       '<span class="role"><i></i>' + esc(D.meta.role || D.meta.nom) + '</span>' +
       '<h1 class="nom">' + esc(D.meta.titre).replace(/IA$/, '<span class="gt">IA</span>') + (D.meta.titre2 ? '<small>' + esc(D.meta.titre2).replace(/IA$/, '<span class="gt">IA</span>') + '</small>' : '') + '</h1>' +
       '<div class="profil-texte">' + txt + '</div>' +
-      '<div class="hero-act"><button class="cta" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button>' +
+      '<div class="hero-act"><a class="cta" href="' + esc(mailto()) + '">' + ico("send") + esc(D.contact.bouton) + '</a>' +
       (D.contact.rdvLien ? '<a class="cta alt" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
       '</div>' +
       '<p class="metas">' + ico("lieu") + esc(D.meta.lieu) + '</p>' +
@@ -225,7 +218,7 @@
     return '<section class="offre" id="offre"><div class="sec-head"><h2>' + esc(O.titre) + '</h2><span class="sec-hint">' + esc(O.hint || "") + '</span></div>' +
       '<ul class="offre-grid n' + O.items.length + '">' + O.items.map(function (it, i) {
         return '<li class="offre-it"><span class="offre-n">' + (i + 1) + '</span><h3>' + esc(it.t) + '</h3><p>' + esc(it.d) + '</p>' + (it.niv ? '<ul class="offre-niv">' + it.niv.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join("") + '</ul>' : '') + (it.fin ? '<p class="offre-fin">' + esc(it.fin) + '</p>' : '') + '</li>';
-      }).join("") + '</ul>' + (O.pied ? '<p class="offre-devis">' + esc(O.pied) + ' <button type="button" class="devis-lien" data-open-contact>' + esc(O.piedLien || "Contactez-moi") + '</button></p>' : '') + '</section>';
+      }).join("") + '</ul>' + (O.pied ? '<p class="offre-devis">' + esc(O.pied) + ' <a class="devis-lien" href="' + esc(mailto()) + '">' + esc(O.piedLien || "Contactez-moi") + '</a></p>' : '') + '</section>';
   }
 
   function kpisHtml(D) {
@@ -569,24 +562,6 @@
   }
 
   function wireContact() {
-    var panel = $("#cpanel"), scrim = $("#scrim");
-    function set(open) {
-      panel.classList.toggle("open", open); scrim.classList.toggle("open", open);
-      document.body.classList.toggle("cp-open", open);
-      panel.setAttribute("aria-hidden", open ? "false" : "true");
-      if (open) $("#cclose").focus();
-    }
-    $$("[data-open-contact]").forEach(function (b) { b.addEventListener("click", function () { set(true); }); });
-    $("#cclose").addEventListener("click", function () { set(false); });
-    scrim.addEventListener("click", function () { set(false); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && panel.classList.contains("open")) set(false); });
-    var b = $("#copy"), a = $("#addr");
-    b.addEventListener("click", function () {
-      var txt = a.textContent, lab = $("span", b);
-      function ok() { lab.textContent = "Copiée"; b.classList.add("done"); setTimeout(function () { lab.textContent = "Copier"; b.classList.remove("done"); }, 2200); }
-      function fallback() { var r = document.createRange(); r.selectNodeContents(a); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); lab.textContent = "Sélectionnée"; }
-      try { navigator.clipboard.writeText(txt).then(ok, fallback); } catch (e) { fallback(); }
-    });
   }
 
   fetch("data.json?v=" + Date.now()).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (D) {
