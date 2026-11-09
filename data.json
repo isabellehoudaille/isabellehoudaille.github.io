@@ -128,7 +128,7 @@
    },
    "phare": true,
    "phareLabel": "Offre phare",
-   "sous": "L'offre cadre : les autres offres la déclinent par métier et par cible."
+   "sous": "Mon offre principale, pour toute l'organisation. Les domaines ci-dessous l'appliquent à un métier ou à une cible."
   },
   {
    "id": "comm",
@@ -440,7 +440,7 @@
   "texte": "Un projet de transformation, une équipe à former, un poste à pourvoir ? Réservez 20 minutes pour en parler, ou écrivez-moi : je vous réponds personnellement.",
   "objet": "Prise de contact depuis votre site",
   "bouton": "Me contacter",
-  "accroche": "On se parle ?",
+  "accroche": "Mon LinkedIn",
   "ecrire": "Écrivez-moi",
   "rdv": "Prendre rendez-vous",
   "rdvLien": "/rdv/"
@@ -452,7 +452,7 @@
   "expertise": "Mes domaines d'expertise : l'IA appliquée aux métiers",
   "terrain": "Sur le terrain, comment ça se passe",
   "terrainHint": "Présentiel, distanciel, conférences et ateliers interactifs, masterclass",
-  "declinaisons": "Ses déclinaisons, par métier et par cible"
+  "declinaisons": "Pour un métier ou une cible en particulier"
  },
  "realisations": [
   {

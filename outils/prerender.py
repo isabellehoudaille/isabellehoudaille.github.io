@@ -26,7 +26,7 @@ if M.get("role"): out.append(f"<p>{e(M['role'])}</p>")
 for para in D["profil"]["texte"].split("\n"): out.append(f"<p>{e(para)}</p>")
 out.append(f"<p>{e(M['lieu'])}</p>")
 out.append(f'<p><a href="mailto:{e(M["email"])}">{e(M["email"])}</a> · <a href="/rdv/">{e(D["contact"]["rdv"])}</a> · '
-           f'<a href="{e(M["pdf"])}">Télécharger le CV (PDF)</a> · <a href="{e(M["linkedin"])}">Profil LinkedIn</a></p>')
+           f'<a href="{e(M["linkedin"])}">Profil LinkedIn</a></p>')
 out.append("</section>")
 
 out.append('<section id="expertise-ssr">')

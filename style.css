@@ -1336,3 +1336,7 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
   .tiles .tile.tile-phare .t-ic { font-size: 4rem !important; }
   .tiles .tile:not(.tile-phare) .t-ic { font-size: 2.6rem !important; }
 }
+
+/* v28 : onglet LinkedIn à droite (lien, plus un bouton) */
+a.tab-contact { text-decoration: none; }
+a.tab-contact .tc-ic svg { width: 1.1em; height: 1.1em; }

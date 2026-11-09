@@ -4,7 +4,6 @@
 
 ## Site
 - [Page d'accueil](https://www.cadreiactif.com/): profil, cinq domaines d'expertise (communication, RH et communication interne, adoption des outils IA et conduite du changement, manager augmenté, associations et entreprises à mission), posture, références, façons de travailler ensemble.
-- [CV en PDF](https://www.cadreiactif.com/CV_Isabelle_Houdaille.pdf)
 - [Prendre rendez-vous](https://www.cadreiactif.com/rdv/): 20 minutes pour faire le point.
 
 ## Contact

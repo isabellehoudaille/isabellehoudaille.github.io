@@ -83,7 +83,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20261109220000">
+<link rel="stylesheet" href="style.css?v=20261109233000">
 <noscript><style>.ssr{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal;padding:24px;max-width:860px;margin:0 auto;font-family:Georgia,serif;line-height:1.6}</style></noscript>
 </head>
 <body>
@@ -96,7 +96,7 @@
 <p>Je pars du travail réel : je diagnostique les besoins, je pose avec la DSI un cadre que chacun comprend, je forme les équipes, je construis avec elles des systèmes de travail augmentés, je mesure ce que ça change. J&#x27;ai transformé ma façon de produire avant d&#x27;accompagner les autres, et je sais où l&#x27;IA apporte de la valeur, et où elle n&#x27;en apporte pas. Bilingue anglais, j&#x27;interviens aussi pour des organismes de formation.</p>
 <p>Humain + IA, jamais l&#x27;un sans l&#x27;autre.</p>
 <p>Basée en région parisienne, j&#x27;interviens dans toute la France</p>
-<p><a href="mailto:ih@cadreiactif.com">ih@cadreiactif.com</a> · <a href="/rdv/">Prendre rendez-vous</a> · <a href="CV_Isabelle_Houdaille.pdf">Télécharger le CV (PDF)</a> · <a href="https://www.linkedin.com/in/isabellehoudaille-ia-digital-innovation-creativite/">Profil LinkedIn</a></p>
+<p><a href="mailto:ih@cadreiactif.com">ih@cadreiactif.com</a> · <a href="/rdv/">Prendre rendez-vous</a> · <a href="https://www.linkedin.com/in/isabellehoudaille-ia-digital-innovation-creativite/">Profil LinkedIn</a></p>
 </section>
 <section id="expertise-ssr">
 <h2>Mes domaines d&#x27;expertise : l&#x27;IA appliquée aux métiers</h2>
@@ -184,7 +184,7 @@
       '<button class="cta sm" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button></div></div>';
 
     $("#dock").innerHTML =
-      '<button class="tab-contact" type="button" data-open-contact aria-label="' + esc(D.contact.accroche || D.contact.bouton) + '"><span class="tc-ic">' + ico("send") + '</span><span class="tc-tx">' + esc(D.contact.accroche || D.contact.bouton) + '</span></button>' +
+      '<a class="tab-contact" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener" aria-label="' + esc(D.contact.accroche || "Mon LinkedIn") + ' (nouvel onglet)"><span class="tc-ic">' + D.icones["in"] + '</span><span class="tc-tx">' + esc(D.contact.accroche || "Mon LinkedIn") + '</span></a>' +
       '<div class="scrim" id="scrim"></div>' +
       '<aside class="cpanel" id="cpanel" aria-hidden="true" aria-label="Contact"><button class="icon-btn x" type="button" id="cclose" aria-label="Fermer">' + ico("close") + '</button>' +
       '<div class="cp-photo"><span class="logo-b">IH</span><div><b>' + esc(D.meta.nom) + '</b><span>' + esc(D.meta.titre) + (D.meta.titre2 ? ' ' + esc(D.meta.titre2) : '') + '</span></div></div>' +
@@ -192,8 +192,7 @@
       (D.contact.texte ? '<p class="cp-txt">' + esc(D.contact.texte) + '</p>' : '') +
       (D.contact.rdvLien ? '<a class="cta" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
       '<div class="addr"><a id="addr" href="' + esc(mailto()) + '">' + esc(D.meta.email) + '</a><button type="button" class="copy" id="copy" aria-label="Copier l\'adresse e-mail">' + ico("copy") + '<span>Copier</span></button></div>' +
-      '<ul class="cp-list"><li><a class="in" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + '<span>Profil LinkedIn</span></a></li>' +
-      '<li><a href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + '<span>CV en PDF</span></a></li></ul></aside>';
+      '<ul class="cp-list"><li><a class="in" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + '<span>Profil LinkedIn</span></a></li></ul></aside>';
   }
 
   /* ---------- Hero ---------- */
@@ -207,7 +206,7 @@
       '<div class="profil-texte">' + txt + '</div>' +
       '<div class="hero-act"><button class="cta" type="button" data-open-contact>' + ico("send") + esc(D.contact.bouton) + '</button>' +
       (D.contact.rdvLien ? '<a class="cta alt" href="' + esc(D.contact.rdvLien) + '" target="_blank" rel="noopener">' + ico("clock") + esc(D.contact.rdv) + '</a>' : '') +
-      '<a class="cta alt" href="' + esc(D.meta.pdf) + '" target="_blank" rel="noopener">' + ico("pdf") + 'Télécharger le CV (PDF)</a></div>' +
+      '<a class="cta alt" href="' + esc(D.meta.linkedin) + '" target="_blank" rel="noopener">' + D.icones["in"] + 'Profil LinkedIn</a></div>' +
       '<p class="metas">' + ico("lieu") + esc(D.meta.lieu) + '</p>' +
       '</div>' +
       '<figure class="vid" id="presentation">' +
