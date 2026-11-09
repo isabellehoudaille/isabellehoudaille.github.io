@@ -1350,3 +1350,26 @@ a.tab-contact .tc-tx { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI
 
 /* v31 : liens mailto (plus de panneau de contact) */
 a.devis-lien { text-decoration: underline; cursor: pointer; }
+
+/* v32 : offre phare en aplat de couleur (brique, texte blanc) et mise en page mobile propre */
+.tiles .tile.tile-phare { background: #c4401b !important; color: #fff !important; box-shadow: 0 20px 44px -24px rgba(196, 64, 27, .6) !important; }
+.tiles .tile.tile-phare .t-title, .tiles .tile.tile-phare .t-sub, .tiles .tile.tile-phare .t-go, .tiles .tile.tile-phare .t-ic { color: #fff !important; }
+.tiles .tile.tile-phare .t-title .iab { color: #ffd9a8 !important; }
+.tiles .tile.tile-phare .t-badge { background: #fff; color: #c4401b; border-color: #fff; }
+.tiles .tile.tile-phare .plus { background: #fff !important; color: #c4401b !important; box-shadow: none !important; }
+.tiles .tile.tile-phare[aria-selected="true"] { box-shadow: inset 0 0 0 4px #fff, 0 20px 44px -24px rgba(196, 64, 27, .6) !important; }
+@media (max-width: 640px) {
+  .tiles .tile.tile-phare {
+    display: grid !important; grid-template-columns: 56px minmax(0, 1fr) auto !important;
+    grid-template-areas: "badge badge badge" "ic title plus" "sub sub sub" "go go go" !important;
+    column-gap: 14px; row-gap: 10px; align-items: center; padding: 18px !important; min-height: 0 !important;
+  }
+  .tiles .tile.tile-phare .t-top { display: contents; }
+  .tiles .tile.tile-phare .plus { grid-area: plus; }
+  .tiles .tile.tile-phare .t-badge { grid-area: badge; justify-self: start; margin: 0; }
+  .tiles .tile.tile-phare .t-ic { grid-area: ic; font-size: 3rem !important; margin: 0; width: auto; height: auto; }
+  .tiles .tile.tile-phare .t-title { grid-area: title; font-size: 1.4rem !important; line-height: 1.12 !important; max-width: none !important; margin: 0; padding: 0; }
+  .tiles .tile.tile-phare .t-sub { grid-area: sub; max-width: none; margin: 0; font-size: .95rem; line-height: 1.4; }
+  .tiles .tile.tile-phare .t-go { grid-area: go; padding-top: 2px; }
+  .tiles .tiles-sub { margin-top: 18px; line-height: 1.4; }
+}
