@@ -1319,3 +1319,20 @@ figure.visuel img { -webkit-mask-image: linear-gradient(180deg, #000 80%, transp
 .tiles > .panel { grid-column: 1 / -1 !important; order: 3; margin-top: 4px; }
 .tiles.phare-open > .panel { order: 1; }
 .tiles.phare-open > :not(.tile-phare):not(.panel) { order: 2; }
+
+/* v27 : offre phare mise en valeur, déclinaisons plus discrètes */
+.tiles .tile.tile-phare { min-height: 300px !important; padding: 34px 38px 28px !important; box-shadow: inset 0 0 0 4px #e4502a, 0 20px 44px -24px rgba(196, 64, 27, .55) !important; }
+.tiles .tile.tile-phare .t-title { font-size: clamp(2rem, 4.2vw, 3.1rem) !important; line-height: 1.05 !important; max-width: 15em !important; }
+.tiles .tile.tile-phare .t-ic { font-size: 8rem !important; }
+.tiles .tile.tile-phare .t-badge { font-size: .82rem; padding: 6px 16px; background: #e4502a; color: #fff; border-color: #e4502a; }
+.tiles .tile.tile-phare .t-sub { font-size: 1.12rem; max-width: 36em; color: var(--fg, #1e2a44); }
+.tiles .tile:not(.tile-phare) { min-height: 170px !important; padding: 18px 22px 16px !important; }
+.tiles .tile:not(.tile-phare) .t-title { font-size: 1.12rem !important; }
+.tiles .tile:not(.tile-phare) .t-ic { font-size: 3rem !important; }
+.tiles .tiles-sub { margin-top: 22px; }
+@media (max-width: 640px) {
+  .tiles .tile.tile-phare { padding: 20px 20px 18px !important; min-height: 0 !important; }
+  .tiles .tile.tile-phare .t-title { font-size: 1.6rem !important; }
+  .tiles .tile.tile-phare .t-ic { font-size: 4rem !important; }
+  .tiles .tile:not(.tile-phare) .t-ic { font-size: 2.6rem !important; }
+}

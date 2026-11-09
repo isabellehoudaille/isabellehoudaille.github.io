@@ -83,7 +83,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20261102120000">
+<link rel="stylesheet" href="style.css?v=20261109220000">
 <noscript><style>.ssr{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:normal;padding:24px;max-width:860px;margin:0 auto;font-family:Georgia,serif;line-height:1.6}</style></noscript>
 </head>
 <body>
@@ -442,6 +442,7 @@
       });
     });
     tabs[0].tabIndex = 0; tabs.slice(1).forEach(function (t) { t.tabIndex = 0; });
+    if (D.fonctions[0] && D.fonctions[0].phare) { wrap.classList.add("touched"); show(0, {}); }
     window.addEventListener("resize", notch);
   }
 
