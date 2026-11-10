@@ -1388,3 +1388,13 @@ a.devis-lien { text-decoration: underline; cursor: pointer; }
 .rcards .rcard .rbody { flex: 1 1 auto; }
 .rcards .rcard .t-go { margin-top: auto; }
 .rcards .rcard .r-gain { margin-bottom: 14px; }
+
+/* v35 : Voir le détail en bleu nuit, plus petit et plus discret */
+.rcards .rcard .t-go {
+  padding: 7px 14px !important; gap: 8px; border-radius: 10px;
+  background: #1e2a44; color: #fff !important; font-size: .82rem !important; font-weight: 600 !important; letter-spacing: .02em;
+  box-shadow: none;
+}
+.rcards .rcard .t-go svg { width: 1em; height: 1em; }
+.rcards .rcard:hover .t-go, .rcards .rcard:focus-visible .t-go { background: #2a3858; box-shadow: 0 8px 16px -10px rgba(30, 42, 68, .7); }
+.rcards .rcard[aria-selected="true"] .t-go { background: #1e2a44; box-shadow: none; }
